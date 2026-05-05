@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" role="img" aria-labelledby="title desc">
+  <title id="title">Northstar Civic Institute logo</title>
+  <desc id="desc">A gold north star on a navy rounded square with Northstar Civic Institute wordmark.</desc>
+  <rect x="0" y="0" width="120" height="120" rx="26" fill="#1B2A4A"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+  <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+  <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+  <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+  <text x="145" y="52" font-family="Georgia, 'Times New Roman', serif" font-size="30" font-weight="700" fill="#1B2A4A">Northstar Civic Institute</text>
+  <text x="148" y="78" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#5E6A7A" letter-spacing=".12em">NONPARTISAN CIVIC RESEARCH &amp; POLICY</text>
+  <rect x="148" y="90" width="64" height="4" rx="2" fill="#C5A55A"/>
+</svg>
