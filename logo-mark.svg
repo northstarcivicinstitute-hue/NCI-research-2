@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title desc">
+  <title id="title">Northstar Civic Institute mark</title>
+  <desc id="desc">A gold north star on a navy rounded square.</desc>
+  <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+  <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+  <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+  <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+  <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+</svg>
