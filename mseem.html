@@ -1,613 +1,442 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MSEEM | Northstar Civic Institute</title>
-  <meta name="description" content="Northstar Civic Institute overview page for Michigan Sports Equity and Economic Mobility, including NIL Access Audit and recruiting-equity materials.">
-  <!-- begin: og/twitter/canonical -->
-  <link rel="canonical" href="https://nciresearch.org/mseem.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Northstar Civic Institute">
-  <meta property="og:title" content="MSEEM | Northstar Civic Institute">
-  <meta property="og:description" content="Northstar Civic Institute overview page for Michigan Sports Equity and Economic Mobility, including NIL Access Audit and recruiting-equity materials.">
-  <meta property="og:url" content="https://nciresearch.org/mseem.html">
-  <meta property="og:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MSEEM | Northstar Civic Institute">
-  <meta name="twitter:description" content="Northstar Civic Institute overview page for Michigan Sports Equity and Economic Mobility, including NIL Access Audit and recruiting-equity materials.">
-  <meta name="twitter:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png">
-  <!-- end: og/twitter/canonical -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iMTQiIGZpbGw9IiMxQjJBNEEiLz4KICA8cGF0aCBkPSJNMzIgOCBMMzUgMjcgTDU0IDMyIEwzNSAzNyBMMzIgNTYgTDI5IDM3IEwxMCAzMiBMMjkgMjcgWiIgZmlsbD0iI0M1QTU1QSIvPgogIDxwYXRoIGQ9Ik0zMiAyMCBMMzQgMjkgTDQzIDMyIEwzNCAzNSBMMzIgNDQgTDMwIDM1IEwyMSAzMiBMMzAgMjkgWiIgZmlsbD0iIzFCMkE0QSIvPgogIDxjaXJjbGUgY3g9IjMyIiBjeT0iMzIiIHI9IjIuNSIgZmlsbD0iI0M1QTU1QSIvPgo8L3N2Zz4K">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="assets/styles.css">
-  <style data-embedded-branding="true">
-@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,700;0,8..60,900;1,8..60,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;0,800&display=swap');
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MSEEM | Northstar Civic Institute</title>
+<link rel="canonical" href="https://nciresearch.org/mseem.html" />
+<meta name="description" content="Michigan Sports Equity and Economic Mobility. NCI's measurement and accountability platform for athlete-opportunity systems, including MSEEM Forward for NIL implementation and athlete mobility." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Northstar Civic Institute" />
+<meta property="og:title" content="MSEEM | Northstar Civic Institute" />
+<meta property="og:description" content="Michigan Sports Equity and Economic Mobility. NCI's measurement and accountability platform, including MSEEM Forward for NIL implementation and athlete mobility." />
+<meta property="og:url" content="https://nciresearch.org/mseem.html" />
+<meta property="og:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MSEEM | Northstar Civic Institute" />
+<meta name="twitter:description" content="NCI's measurement and accountability platform for athlete-opportunity systems, including MSEEM Forward." />
+<meta name="twitter:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
 
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
 
-:root {
-  --navy: #1B2A4A;
-  --navy-2: #243556;
-  --gold: #C5A55A;
-  --gold-soft: #D4BC80;
-  --gold-pale: #F5EFE0;
-  --ink: #1A2235;
-  --muted: #5E6A7A;
-  --bg: #fbfaf7;
-  --paper: #ffffff;
-  --surface: #f5f4f0;
-  --line: rgba(27,42,74, 0.12);
-  --line-strong: rgba(27,42,74, 0.2);
-  --shadow: 0 14px 40px rgba(27,42,74, 0.08);
-  --shadow-lg: 0 24px 70px rgba(27,42,74, 0.14);
-  --radius: 28px;
-  --radius-sm: 18px;
-  --max: 1200px;
+<style>
+:root{
+  --navy:#1B2A4A; --navy-2:#2A3A5C; --navy-deep:#131C30;
+  --gold:#C5A55A; --gold-2:#D4B570; --gold-soft:rgba(197,165,90,0.12);
+  --paper:#FBFAF6; --ivory:#F4EFE3; --paper-2:#F7F3EA;
+  --ink:#15192A; --slate:#5A6478; --slate-2:#8089A0;
+  --rule:rgba(27,42,74,0.10); --rule-strong:rgba(27,42,74,0.18);
 }
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-weight:400;font-feature-settings:'ss01','kern'}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:'Source Serif 4',Georgia,serif;font-weight:600;letter-spacing:-0.015em;color:var(--navy)}
+h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.06;letter-spacing:-0.025em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.12}
+h3{font-size:1.3rem;line-height:1.25}
+h4{font-size:1.02rem;letter-spacing:-0.01em}
+p{font-weight:400}
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 108px; }
-body {
-  margin: 0;
-  background: radial-gradient(circle at top right, rgba(197,165,90,0.12), transparent 20%), var(--bg);
-  color: var(--ink);
-  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  line-height: 1.72;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  font-size: 16.5px;
-}
-a { color: inherit; text-decoration: none; transition: color .15s ease; }
-p { margin: 0; }
-img { max-width: 100%; display: block; }
-code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
-.sr-only {
-  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
-  overflow: hidden; clip: rect(0, 0, 0, 0); border: 0;
-}
-.skip-link {
-  position: absolute; left: 12px; top: -48px; z-index: 1000;
-  background: #fff; color: var(--navy); padding: 12px 16px; border-radius: 999px;
-  box-shadow: var(--shadow); font-weight: 700;
-}
-.skip-link:focus { top: 12px; }
-:focus-visible {
-  outline: 3px solid rgba(197,165,90,.65);
-  outline-offset: 3px;
-  border-radius: 12px;
-}
-.container { width: min(calc(100% - 2rem), var(--max)); margin: 0 auto; }
-main { overflow: clip; }
-.site-header {
-  position: sticky; top: 0; z-index: 50;
-  background: rgba(251,250,247,.88); backdrop-filter: blur(16px) saturate(140%);
-  border-bottom: 1px solid rgba(27,42,74,0.08);
-}
-.top-bar {
-  background: linear-gradient(90deg, rgba(27,42,74,1), rgba(19,36,78,1));
-  color: rgba(255,255,255,0.82); border-bottom: 1px solid rgba(255,255,255,.08);
-}
-.top-inner {
-  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-  padding: .7rem 0; font-size: .92rem;
-}
-.topline-brand { font-weight: 800; letter-spacing: .03em; }
-.topline-pills { display: flex; flex-wrap: wrap; gap: .55rem; }
-.topline-pill {
-  display: inline-flex; align-items: center; padding: .34rem .72rem; border-radius: 999px;
-  background: rgba(255,255,255,0.12); color: #fff; font-size: .82rem; font-weight: 700;
-}
-.nav-wrap {
-  display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 0;
-}
-.brand-lockup { display: inline-flex; align-items: center; gap: .9rem; min-width: 0; }
-.brand-lockup img { width: 54px; height: 54px; flex: 0 0 auto; }
-.brand-copy { min-width: 0; }
-.brand-copy small {
-  font-family: 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
-  display: block; color: var(--muted); font-size: .82rem; letter-spacing: .04em;
-  text-transform: uppercase;
-}
-.brand-copy strong {
-  display: block; font-size: 1.06rem; line-height: 1.15; color: var(--navy);
-}
-.nav-links { display: flex; align-items: center; gap: .35rem; }
-.nav-links a {
-  padding: .72rem .92rem; border-radius: 999px; color: var(--muted); font-weight: 700;
-}
-.nav-links a:hover, .nav-links a.active { background: rgba(27,42,74,0.07); color: var(--navy); }
-.nav-links a.active { box-shadow: inset 0 0 0 1px rgba(197,165,90,.18); }
-.nav-links .nav-cta { margin-left: .35rem; }
-.nav-toggle {
-  display: none; appearance: none; border: 1px solid rgba(27,42,74,.12); background: #fff;
-  border-radius: 16px; padding: 12px; box-shadow: var(--shadow); cursor: pointer;
-}
-.nav-toggle span { display: block; width: 22px; height: 2px; background: var(--navy); border-radius: 999px; }
-.nav-toggle span + span { margin-top: 4px; }
-.page-hero {
-  background: radial-gradient(circle at top right, rgba(197,165,90,0.16), transparent 22%), linear-gradient(180deg, #1B2A4A 0%, #243556 100%);
-  color: #fff; padding: 4.5rem 0 4rem;
-}
-.home-hero { padding-top: 5rem; }
-.hero-grid {
-  display: grid; grid-template-columns: 1.15fr .95fr; gap: 2rem; align-items: center;
-}
-.eyebrow, .kicker, .card-kicker, .hero-badge, .phase-label {
-  display: inline-flex; align-items: center; gap: .45rem;
-  font-family: 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
-  font-size: .79rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-}
-.eyebrow, .hero-badge { color: var(--gold-soft); }
-.kicker, .card-kicker, .phase-label { color: var(--gold); }
-.hero-badge {
-  padding: .5rem .78rem; border-radius: 999px; background: rgba(255,255,255,.12); width: fit-content;
-}
-h1, h2, h3 { margin: 0; line-height: 1.02; letter-spacing: -.035em; }
-h1, h2 { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; font-weight: 600; }
-h1 { font-size: clamp(2.8rem, 5vw, 5.15rem); max-width: 12ch; margin-top: 1rem; }
-h2 { font-size: clamp(2.15rem, 4vw, 3.55rem); color: var(--navy); }
-h3 { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; font-size: 1.78rem; font-weight: 600; color: var(--navy); }
-.lead {
-  margin-top: 1rem; max-width: 62ch; color: rgba(255,255,255,0.84); font-size: 1.08rem; line-height: 1.82;
-}
-.hero-actions, .stack-actions, .cta-actions, .meta-row, .filter-row, .download-row {
-  display: flex; flex-wrap: wrap; gap: .75rem;
-}
-.hero-actions { margin-top: 1.5rem; }
-.button {
-  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
-  padding: .95rem 1.2rem; border-radius: 999px; font-weight: 800; border: 1px solid transparent;
-  transition: transform .15s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease, color .18s ease;
-}
-.button:hover { transform: translateY(-1px); }
-.button.primary { background: var(--gold); color: var(--navy); box-shadow: 0 12px 28px rgba(197,165,90,.26); }
-.button.secondary { background: rgba(255,255,255,.1); color: #fff; border-color: rgba(255,255,255,.16); }
-.button.light { background: rgba(255,255,255,.18); color: #fff; border-color: rgba(255,255,255,.2); }
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:var(--navy);color:var(--gold);padding:0.6rem 1rem;z-index:100}
 
-.card .button.secondary, .surface-band .button.secondary, .brief-content .button.secondary, .split-callout .button.secondary, .summary-box .button.secondary { background: var(--surface); color: var(--navy); border-color: var(--line-strong); }
-.section { padding: 5.6rem 0; }
-.surface-band { background: linear-gradient(180deg, rgba(27,42,74,.03), rgba(27,42,74,.01)); border-top: 1px solid rgba(27,42,74,.06); border-bottom: 1px solid rgba(27,42,74,.06); }
-.metrics-strip { padding-top: 2.1rem; }
-.stats-grid, .grid-2, .grid-3, .grid-4, .brief-layout, .quote-grid { display: grid; gap: 1.2rem; }
-.grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.four-up { grid-template-columns: repeat(4, minmax(0, 1fr)); }
-.card, .stat-card, .hero-panel, .summary-box, .toc-card, .surface-card, .cta-banner, .stack-item {
-  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: var(--shadow);
-}
-.card, .surface-card, .hero-panel, .stack-item, .summary-box, .toc-card, .brief-section, .phase-card, .stat-card {
-  transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
-}
-.card:hover, .surface-card:hover, .hero-panel:hover, .stack-item:hover, .summary-box:hover, .toc-card:hover, .brief-section:hover, .phase-card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-lg);
-  border-color: rgba(197,165,90,.26);
-}
-.card, .hero-panel, .surface-card { padding: 1.65rem; }
-.card p, .surface-card p, .brief-content p, .brief-end-actions p, .stack-item p { color: var(--muted); line-height: 1.8; }
-.card > p, .surface-card > p { margin-top: .8rem; }
-.card-title { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; font-size: 2.1rem; color: var(--navy); }
-.hero-panel { padding: 1.7rem; color: var(--ink); background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(247,240,220,0.78)); }
-.hero-panel-title { font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; color: var(--navy); margin-top: .8rem; font-size: 2.05rem; line-height: 1.08; }
-.hero-panel-copy { margin-top: .8rem; color: var(--muted); }
-.hero-mini-grid {
-  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin-top: 1rem;
-}
-.hero-mini-grid div { background: rgba(255,255,255,.74); border-radius: 16px; padding: 1rem; border: 1px solid rgba(27,42,74,.08); }
-.hero-mini-grid strong { display: block; color: var(--navy); }
-.hero-mini-grid span { display: block; font-size: .9rem; color: var(--muted); margin-top: .3rem; }
-.section-head {
-  display: grid; grid-template-columns: 1.1fr .9fr; gap: 1.5rem; align-items: end; margin-bottom: 1.65rem;
-}
-.section-head > div { max-width: 760px; }
-.section-head p { color: var(--muted); }
-.stat-card { padding: 1.45rem 1rem; text-align: center; background: linear-gradient(180deg, #fff, #fcfbf8); }
-.stat-card strong { display: block; font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif; font-size: 2.45rem; color: var(--navy); }
-.stat-card span { color: var(--muted); font-size: .96rem; }
-.meta-chip {
-  font-family: 'SF Mono', ui-monospace, Menlo, Consolas, monospace;
-  display: inline-flex; align-items: center; padding: .42rem .72rem; border-radius: 999px;
-  background: var(--surface); color: var(--navy); font-size: .78rem; letter-spacing: .01em; border: 1px solid rgba(27,42,74,.08);
-}
-.text-link { margin-top: .95rem; display: inline-flex; color: var(--navy); font-weight: 800; position: relative; }
-.text-link::after { content: '→'; margin-left: .45rem; transition: transform .15s ease; }
-.text-link:hover::after { transform: translateX(2px); }
-.list-clean { margin: 1rem 0 0; padding-left: 1.1rem; color: var(--muted); }
-.list-clean li::marker { color: var(--gold); }
-.list-clean li + li { margin-top: .5rem; }
-.split-callout {
-  display: grid; grid-template-columns: 1.05fr .95fr; gap: 1.5rem; align-items: center;
-}
-.split-callout p { color: var(--muted); line-height: 1.85; }
-.align-center { align-items: center; }
-.partner-grid .card, .briefs-grid .card { height: 100%; }
-.filter-button {
-  appearance: none; border: 1px solid var(--line-strong); background: #fff; color: var(--navy);
-  padding: .7rem .95rem; border-radius: 999px; font-weight: 800; cursor: pointer;
-}
-.filter-button.is-active, .filter-button:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
-.cta-shell { padding-top: 0; }
-.cta-banner {
-  background: radial-gradient(circle at top right, rgba(197,165,90,.14), transparent 24%), linear-gradient(180deg, #1B2A4A 0%, #243556 100%); color: #fff;
-  padding: 2.2rem; border-radius: var(--radius); display: grid; grid-template-columns: 1.2fr .8fr; gap: 1.5rem;
-  border: 1px solid rgba(255,255,255,.1); box-shadow: var(--shadow-lg);
-}
-.cta-banner h2 { color: #fff; margin-top: .6rem; }
-.cta-banner p { color: rgba(255,255,255,.78); }
-.light { color: var(--gold-soft); }
-.site-footer { background: radial-gradient(circle at top right, rgba(197,165,90,.1), transparent 24%), #1B2A4A; color: rgba(255,255,255,.82); padding: 3.2rem 0 1.5rem; }
-.footer-grid { display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 1.5rem; }
-.footer-brand { display: flex; align-items: flex-start; gap: .9rem; }
-.footer-brand img { width: 46px; height: 46px; }
-.site-footer strong { color: #fff; }
-.site-footer a { color: rgba(255,255,255,.82); }
-.site-footer a:hover { color: #fff; }
-.footer-bottom { border-top: 1px solid rgba(255,255,255,.08); margin-top: 1.5rem; padding-top: 1rem; font-size: .92rem; }
-.contact-form { display: grid; gap: .95rem; margin-top: 1rem; }
-.contact-form label { display: grid; gap: .45rem; font-weight: 700; color: var(--navy); }
-.contact-form input, .contact-form select, .contact-form textarea {
-  transition: border-color .15s ease, box-shadow .15s ease, background .15s ease;
-  width: 100%; border: 1px solid var(--line-strong); border-radius: 14px; padding: .95rem 1rem;
-  font: inherit; background: #fff; color: var(--ink);
-}
-.contact-form input:focus, .contact-form select:focus, .contact-form textarea:focus {
-  border-color: rgba(197,165,90,.7);
-  box-shadow: 0 0 0 4px rgba(197,165,90,.12);
-}
-.stack-list { display: grid; gap: .9rem; margin-top: 1rem; }
-.stack-item { background: linear-gradient(180deg, #fff, #fcfbf8); }
-.stack-item { padding: 1rem; }
-.stack-item strong { display: block; color: var(--navy); margin-bottom: .3rem; }
-.brief-layout { grid-template-columns: 280px minmax(0, 1fr); align-items: start; }
-.brief-sidebar { position: sticky; top: 122px; }
-.toc-card { padding: 1.2rem; }
-.toc { display: grid; gap: .55rem; margin-top: .9rem; }
-.toc a { color: var(--muted); font-weight: 700; }
-.toc a:hover { color: var(--navy); }
-.brief-meta { margin-top: 1rem; display: flex; flex-wrap: wrap; gap: .55rem; }
-.brief-content { display: grid; gap: 1.2rem; }
-.summary-box { padding: 1.35rem; }
-.summary-box p { margin: .8rem 0 0; color: var(--muted); }
-.brief-section { padding: 1.55rem; background: #fff; border: 1px solid var(--line); border-radius: var(--radius-sm); box-shadow: var(--shadow); scroll-margin-top: 122px; }
-.brief-section h2 { font-size: 2.15rem; margin-bottom: 1rem; }
-.brief-section p + p { margin-top: .9rem; }
-.phase-list { display: grid; gap: .8rem; margin-top: 1rem; }
-.phase-card {
-  display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 1rem; padding: 1.05rem;
-  border: 1px solid rgba(27,42,74,.08); border-radius: 16px; background: linear-gradient(180deg, #fff, #fcfbf8);
-}
-.phase-card h3 { font-size: 1.1rem; }
-.phase-card p { margin-top: .35rem; }
-.references { margin-top: 1rem; }
-.references summary { cursor: pointer; font-weight: 800; color: var(--navy); }
-.references p { margin-top: .75rem; color: var(--muted); }
-.brief-end-actions { display: flex; flex-wrap: wrap; gap: .75rem; }
-@media (max-width: 1100px) {
-  .hero-grid, .section-head, .split-callout, .cta-banner, .grid-4, .brief-layout { grid-template-columns: 1fr; }
-  .brief-sidebar { position: static; }
-}
-@media (max-width: 840px) {
-  .top-inner { grid-template-columns: 1fr; display: grid; }
-  .grid-3, .grid-4, .four-up { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .footer-grid, .grid-2 { grid-template-columns: 1fr; }
-  .nav-toggle { display: inline-flex; flex-direction: column; justify-content: center; }
-  .nav-links {
-    position: absolute; left: 1rem; right: 1rem; top: calc(100% + .45rem); background: #fff;
-    border: 1px solid var(--line); border-radius: 20px; padding: .7rem; box-shadow: var(--shadow-lg);
-    display: none; flex-direction: column; align-items: stretch;
-  }
-  .nav-links.is-open { display: flex; }
-  .nav-links a { width: 100%; }
-  .nav-links .nav-cta { margin-left: 0; }
-}
-@media (max-width: 640px) {
-  .section { padding: 4.35rem 0; }
-  h1 { font-size: clamp(2.15rem, 10vw, 3.2rem); }
-  h2 { font-size: clamp(1.7rem, 7vw, 2.35rem); }
-  .grid-3, .grid-4, .four-up { grid-template-columns: 1fr; }
-  .hero-mini-grid, .phase-card { grid-template-columns: 1fr; }
-  .container { width: min(calc(100% - 1rem), var(--max)); }
-  body { font-size: 16px; }
-  .topline-pills { gap: .4rem; }
-}
+header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,0.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.head-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.6rem;gap:1.5rem}
+.brand{display:flex;align-items:center;gap:0.85rem;text-decoration:none;color:var(--navy)}
+.brand .mark{width:40px;height:40px;border-radius:9px;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-eyebrow{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-weight:500}
+.brand-name{font-family:'Source Serif 4',serif;font-weight:600;font-size:1.05rem;color:var(--navy)}
+nav{display:flex;gap:1.7rem;align-items:center}
+nav a{color:var(--navy);text-decoration:none;font-size:0.9rem;font-weight:500;padding:0.4rem 0;position:relative;white-space:nowrap}
+nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--gold);transition:width 0.25s ease}
+nav a:hover::after{width:100%}
+nav a.current::after{width:100%}
+.menu-btn{display:none;background:none;border:1px solid var(--rule);padding:0.45rem 0.6rem;cursor:pointer;border-radius:3px}
+.menu-btn svg{width:20px;height:20px;stroke:var(--navy)}
+@media (max-width:1080px){nav{gap:1.2rem}nav a{font-size:0.85rem}}
+@media (max-width:980px){nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule);padding:0.8rem 1.6rem;box-shadow:0 8px 20px rgba(27,42,74,0.06)}nav.open{display:flex}nav a{padding:0.85rem 0;border-bottom:1px solid var(--rule);width:100%}nav a:last-child{border-bottom:none}nav a::after{display:none}.menu-btn{display:block}}
 
+.hero{max-width:1280px;margin:0 auto;padding:5.5rem 1.6rem 4rem;position:relative}
+.hero::before{content:'';position:absolute;top:5.5rem;right:1.6rem;width:1px;height:4rem;background:var(--gold)}
+.hero-eyebrow{font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:1.8rem;display:flex;align-items:center;gap:0.7rem}
+.hero-eyebrow::before{content:'';width:24px;height:1px;background:var(--gold)}
+.hero h1{max-width:20ch}
+.hero h1 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.hero .lead{margin-top:2rem;max-width:58ch;font-size:1.12rem;color:var(--slate);line-height:1.6}
+.hero-cta{display:flex;gap:0.9rem;margin-top:2.6rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.5rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;border-radius:2px;transition:all 0.22s ease;letter-spacing:0.01em}
+.btn-primary{background:var(--navy);color:var(--paper);border:1px solid var(--navy)}
+.btn-primary:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn-ghost{background:transparent;color:var(--navy);border:1px solid var(--rule-strong)}
+.btn-ghost:hover{border-color:var(--navy);background:var(--paper-2)}
+.btn .arrow{transition:transform 0.22s ease}
+.btn:hover .arrow{transform:translateX(3px)}
 
-.anchor-bar {
-  display: flex; flex-wrap: wrap; gap: .7rem; align-items: center;
-}
-.anchor-link {
-  display: inline-flex; align-items: center; justify-content: center;
-  padding: .76rem 1rem; border-radius: 999px; border: 1px solid var(--line-strong);
-  background: #fff; color: var(--navy); font-weight: 800; box-shadow: var(--shadow);
-}
-.anchor-link:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
-.status-row { display: flex; gap: .5rem; margin: .55rem 0 0; }
-.status-chip {
-  display: inline-flex; align-items: center; padding: .34rem .65rem; border-radius: 999px;
-  font-size: .74rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase;
-  border: 1px solid transparent;
-}
-.status-chip.active { background: rgba(29, 122, 67, 0.1); color: #185b34; border-color: rgba(29, 122, 67, 0.22); }
-.status-chip.ready { background: rgba(27,42,74, 0.08); color: var(--navy); border-color: rgba(27,42,74,.14); }
-.status-chip.developing { background: rgba(197,165,90,.16); color: #8b6808; border-color: rgba(197,165,90,.34); }
-.status-chip.future { background: rgba(91,100,114,.12); color: #4d5560; border-color: rgba(91,100,114,.22); }
-.card .status-row + h3 { margin-top: .3rem; }
-.site-footer p a { display: inline-flex; min-height: 28px; align-items: center; }
-@media (max-width: 840px) {
-  .anchor-bar { justify-content: flex-start; }
-}
+section{max-width:1280px;margin:0 auto;padding:5.5rem 1.6rem}
+.section-head{display:flex;align-items:baseline;gap:2rem;margin-bottom:3.2rem;flex-wrap:wrap}
+.section-num{font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--gold);font-weight:600;letter-spacing:0.06em;border-top:2px solid var(--gold);padding-top:0.55rem;min-width:70px;flex-shrink:0}
+.section-num span{display:block;margin-top:0.15rem;color:var(--slate);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase}
+.section-title{flex:1;min-width:260px}
+.section-title h2{max-width:30ch}
+.section-title .desc{color:var(--slate);margin-top:0.8rem;max-width:62ch;font-size:1.02rem;line-height:1.6}
 
+/* Four lenses */
+.lenses{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:920px){.lenses{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:560px){.lenses{grid-template-columns:1fr}}
+.lens{padding:2.4rem 1.8rem;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:0.9rem}
+.lens:last-child{border-right:none}
+@media (max-width:920px){.lens:nth-child(2){border-right:none}.lens:nth-child(1),.lens:nth-child(2){border-bottom:1px solid var(--rule)}}
+@media (max-width:560px){.lens{border-right:none;border-bottom:1px solid var(--rule)}.lens:last-child{border-bottom:none}}
+.lens-num{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.05rem;font-weight:500}
+.lens-tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.lens h3{color:var(--navy);font-size:1.25rem}
+.lens p{color:var(--slate);font-size:0.93rem;line-height:1.6;flex:1}
 
-/* ---- Form Validation ---- */
-.has-error {
-  border-color: #C0392B !important;
-  box-shadow: 0 0 0 3px rgba(192,57,43,.12) !important;
+/* MSEEM Forward — featured subsection */
+.forward-wrap{
+  background:linear-gradient(180deg, var(--ivory) 0%, var(--paper-2) 100%);
+  border-top:1px solid var(--rule);
+  border-bottom:1px solid var(--rule);
+  padding:5rem 1.6rem;
 }
-.form-error {
-  display: block;
-  font-size: .82rem;
-  color: #C0392B;
-  margin-top: .3rem;
-  font-weight: 600;
+.forward-inner{max-width:1280px;margin:0 auto}
+.forward-eyebrow{
+  display:flex;align-items:baseline;gap:1.2rem;margin-bottom:2.5rem;
+  border-top:2px solid var(--gold);padding-top:0.6rem;
 }
+.forward-mark{font-family:'Source Serif 4',serif;font-size:0.92rem;color:var(--gold);font-weight:600;letter-spacing:0.06em}
+.forward-tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-weight:600}
+.forward-head{display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:end;margin-bottom:3rem}
+@media (max-width:880px){.forward-head{grid-template-columns:1fr;gap:1.5rem}}
+.forward-head h2{font-size:clamp(2rem,4vw,3rem);max-width:18ch}
+.forward-head h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.forward-head p{color:var(--slate);font-size:1.05rem;line-height:1.6;max-width:48ch}
 
-/* ---- Print Styles ---- */
-@media print {
-  .site-header, .top-bar, .nav-toggle, .nav-links,
-  .site-footer, .cta-shell, .cta-banner,
-  .hero-actions, .hero-panel, .button,
-  .skip-link, .filter-row { display: none !important; }
-  body { background: #fff; color: #000; font-size: 11pt; line-height: 1.5; }
-  .page-hero { background: none !important; color: #000 !important; padding: 1rem 0; }
-  .page-hero h1, .page-hero .eyebrow, .page-hero .lead { color: #000 !important; }
-  .container { width: 100%; max-width: none; }
-  .card, .stat-card, .summary-box, .brief-section {
-    box-shadow: none; border: 1px solid #ccc; break-inside: avoid;
-  }
-  a[href]::after { content: " (" attr(href) ")"; font-size: .8em; color: #666; }
-  a.button::after, a.text-link::after { content: none; }
+.forward-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:0;background:var(--paper);border:1px solid var(--rule)}
+@media (max-width:880px){.forward-grid{grid-template-columns:1fr}}
+.forward-cell{
+  padding:2.2rem 1.8rem;
+  border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:0.85rem;
 }
+.forward-cell:last-child{border-right:none}
+@media (max-width:880px){.forward-cell{border-right:none;border-bottom:1px solid var(--rule)}.forward-cell:last-child{border-bottom:none}}
+.forward-cell-num{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1rem;font-weight:500}
+.forward-cell-tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.forward-cell h3{color:var(--navy);font-size:1.2rem}
+.forward-cell p{color:var(--slate);font-size:0.93rem;line-height:1.55;flex:1}
+.forward-cell .deliv{font-size:0.78rem;color:var(--navy);font-weight:600;letter-spacing:0.02em;padding-top:0.7rem;border-top:1px dashed var(--rule)}
 
-/* ---- Page load animation ---- */
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(16px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.page-hero .eyebrow, .page-hero h1, .page-hero .lead, .page-hero .hero-actions {
-  animation: fadeUp .5s ease both;
-}
-.page-hero h1 { animation-delay: .08s; }
-.page-hero .lead { animation-delay: .16s; }
-.page-hero .hero-actions { animation-delay: .24s; }
+.forward-cta{display:flex;gap:0.9rem;margin-top:2.5rem;flex-wrap:wrap}
 
-/* Download and brand asset additions */
-.download-card .button, .asset-card .button { margin-top: 1rem; }
-.asset-thumb { width: 100%; height: 110px; object-fit: contain; object-position: left center; padding: .85rem; border: 1px solid var(--line); border-radius: 16px; background: #fff; margin-bottom: 1rem; }
-.asset-card .download-row { margin-top: .9rem; }
-.download-card .meta-row { margin-top: 1rem; }
-@media (max-width: 960px) { .asset-thumb { height: 92px; } }
+/* Connected materials */
+.materials{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:780px){.materials{grid-template-columns:1fr}}
+.mat{padding:2.6rem 2rem;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:1rem;text-decoration:none;color:var(--ink);transition:background 0.22s ease}
+.mat:nth-child(even){border-right:none}
+.mat:nth-child(1),.mat:nth-child(2){border-bottom:1px solid var(--rule)}
+@media (max-width:780px){.mat{border-right:none;border-bottom:1px solid var(--rule)}.mat:last-child{border-bottom:none}}
+.mat:hover{background:var(--paper-2)}
+.mat:hover h3{color:var(--gold)}
+.mat-eyebrow{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:600}
+.mat h3{color:var(--navy);font-size:1.35rem;transition:color 0.22s ease}
+.mat-body{color:var(--slate);font-size:0.95rem;line-height:1.6;flex:1}
+.mat-tags{display:flex;gap:0.4rem;flex-wrap:wrap}
+.tag{font-size:0.7rem;padding:0.26rem 0.6rem;background:var(--gold-soft);color:var(--navy);border-radius:2px;font-weight:500;letter-spacing:0.02em}
+.mat-link{font-size:0.82rem;color:var(--navy);font-weight:600;letter-spacing:0.02em;text-transform:uppercase}
+.mat-link::after{content:' →';color:var(--gold)}
 
+/* Audiences */
+.aud-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:880px){.aud-grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.aud-grid{grid-template-columns:1fr}}
+.aud{padding:2.4rem 1.6rem;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:0.85rem}
+.aud:last-child{border-right:none}
+@media (max-width:880px){.aud:nth-child(2){border-right:none}.aud:nth-child(1),.aud:nth-child(2){border-bottom:1px solid var(--rule)}}
+@media (max-width:520px){.aud{border-right:none;border-bottom:1px solid var(--rule)}.aud:last-child{border-bottom:none}}
+.aud-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1rem;font-weight:500}
+.aud-tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.aud h3{color:var(--navy);font-size:1.2rem}
+.aud p{color:var(--slate);font-size:0.92rem;line-height:1.55;flex:1}
+
+/* Why this matters block */
+.why{background:var(--navy);color:var(--paper);margin-top:0;padding:5rem 1.6rem}
+.why-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:auto 1fr;gap:3rem;align-items:start}
+@media (max-width:780px){.why-inner{grid-template-columns:1fr;gap:1.5rem}}
+.why-mark{font-family:'Source Serif 4',serif;font-style:italic;font-size:3.5rem;color:var(--gold);line-height:0.6;font-weight:400}
+.why-body p{font-family:'Source Serif 4',serif;font-size:1.4rem;line-height:1.5;color:var(--paper);max-width:60ch}
+.why-body p .accent{color:var(--gold);font-style:italic}
+.why-attribution{margin-top:1.2rem;font-family:'DM Sans',sans-serif;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.16em;color:rgba(248,245,238,0.6);font-style:normal}
+
+/* Closing */
+.closing-wrap{background:var(--ivory);padding:5rem 1.6rem;border-top:1px solid var(--rule)}
+.closing-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+@media (max-width:780px){.closing-inner{grid-template-columns:1fr;gap:2rem}}
+.closing-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.2rem;font-weight:600}
+.closing-inner h2{color:var(--navy);max-width:22ch}
+.closing-inner h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.closing-inner p{color:var(--slate);margin-top:1.2rem;font-size:1.02rem;line-height:1.6;max-width:48ch}
+.closing-cta{display:flex;flex-direction:column;gap:0.7rem}
+
+footer{background:var(--navy-deep);color:rgba(248,245,238,0.7);padding:4.5rem 1.6rem 2rem}
+.foot-inner{max-width:1280px;margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(248,245,238,0.08)}
+@media (max-width:780px){.foot-grid{grid-template-columns:1fr 1fr;gap:2.2rem}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
+.foot-brand{display:flex;gap:1.2rem;align-items:start}
+.foot-brand .mark{width:52px;height:52px;border-radius:10px;flex-shrink:0}
+.foot-brand-text h4{color:var(--paper);margin-bottom:0.5rem;font-size:1.05rem}
+.foot-brand-text p{font-size:0.9rem;line-height:1.6;color:rgba(248,245,238,0.65);max-width:36ch}
+.foot-col h5{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);margin-bottom:1.1rem;font-weight:600}
+.foot-col a{display:block;color:rgba(248,245,238,0.7);text-decoration:none;padding:0.32rem 0;font-size:0.92rem;transition:color 0.2s ease}
+.foot-col a:hover{color:var(--gold)}
+.foot-col .email{font-size:0.88rem;color:rgba(248,245,238,0.55);margin-top:0.2rem}
+.foot-bottom{padding-top:1.5rem;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-bottom .nonprofit{color:var(--gold);font-weight:500;letter-spacing:0.02em}
+
+.strip{background:var(--ivory);border-bottom:1px solid var(--rule);padding:0.6rem 1.6rem;text-align:center;font-size:0.82rem;color:var(--navy);letter-spacing:0.02em}
+.strip strong{color:var(--gold);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-size:0.72rem}
 </style>
-
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to content</a>
-  <header class="site-header">
-    <div class="top-bar">
-      <div class="container top-inner">
-        <div class="topline-brand">Northstar Civic Institute</div>
-        <div class="topline-pills"><span class="topline-pill">14 research resources</span><span class="topline-pill">2 flagship programs</span><span class="topline-pill">14 initiative and policy lines</span></div>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<div class="strip"><strong>Measurement and accountability platform</strong> &nbsp; Michigan Sports Equity and Economic Mobility</div>
+
+<header>
+  <div class="head-inner">
+    <a class="brand" href="/index.html">
+      <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+        <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+        <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+        <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-eyebrow">Research and policy institute</span>
+        <span class="brand-name">Northstar Civic Institute</span>
+      </span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('nav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/initiatives.html">Initiatives</a>
+      <a href="/mseem.html" class="current">MSEEM</a>
+      <a href="/civil-governance-lab.html">Civil Governance</a>
+      <a href="/briefs.html">Briefs</a>
+      <a href="/legislation.html">Policy</a>
+      <a href="/ledger-strategy-group.html">LSG</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="hero-eyebrow">Flagship measurement platform</div>
+  <h1>MSEEM measures whether opportunity in sports-adjacent systems is being distributed <span class="accent">visibly, fairly, and accountably</span>.</h1>
+  <p class="lead">Michigan Sports Equity and Economic Mobility is the framework that ties NIL readiness, district audits, recruiting-equity questions, and athlete-opportunity governance into one usable lane.</p>
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="/brief-6.html">Read Brief 06 <span class="arrow">→</span></a>
+    <a class="btn btn-ghost" href="/contact.html">Request an MSEEM briefing</a>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">01<span>What MSEEM measures</span></div>
+    <div class="section-title">
+      <h2>Four practical lenses.</h2>
+      <p class="desc">This is the simplest public explanation of the framework. It is designed to be repeated in decks, district briefings, and future scorecards.</p>
+    </div>
+  </div>
+  <div class="lenses">
+    <div class="lens"><span class="lens-num">i.</span><span class="lens-tag">Access</span><h3>Who gets in</h3><p>Track where cost, geography, participation design, and institutional gatekeeping shape who can enter or stay in the pathway.</p></div>
+    <div class="lens"><span class="lens-num">ii.</span><span class="lens-tag">Visibility</span><h3>Who gets seen</h3><p>Look at film, data, discoverability, scouting access, and the infrastructure that turns talent into opportunity.</p></div>
+    <div class="lens"><span class="lens-num">iii.</span><span class="lens-tag">Readiness</span><h3>Who is prepared</h3><p>Assess whether schools, districts, and athletic departments have the tools, policies, and education needed for NIL-era decision-making.</p></div>
+    <div class="lens"><span class="lens-num">iv.</span><span class="lens-tag">Public value</span><h3>What the system produces</h3><p>Ask whether current practices are actually creating broader educational and economic opportunity, not just promotional claims.</p></div>
+  </div>
+</section>
+
+<div class="forward-wrap" id="mseem-forward">
+  <div class="forward-inner">
+    <div class="forward-eyebrow">
+      <span class="forward-mark">02</span>
+      <span class="forward-tag">MSEEM Forward &middot; Implementation track</span>
+    </div>
+    <div class="forward-head">
+      <h2>MSEEM Forward turns the measurement framework into <span class="accent">implementation work</span>.</h2>
+      <p>If MSEEM is the lens, MSEEM Forward is the playbook. The implementation track delivers NIL readiness, financial literacy, and athlete mobility pathways to the districts, athletic departments, and intermediate school districts that have to operationalize this work.</p>
+    </div>
+    <div class="forward-grid">
+      <div class="forward-cell">
+        <span class="forward-cell-num">i.</span>
+        <span class="forward-cell-tag">NIL implementation</span>
+        <h3>District NIL Compliance</h3>
+        <p>Policy templates, family-facing disclosure language, and athletic department readiness checklists for districts and ISDs working through the post-MHSAA NIL landscape.</p>
+        <div class="deliv">Compliance playbook &middot; Readiness checklist</div>
+      </div>
+      <div class="forward-cell">
+        <span class="forward-cell-num">ii.</span>
+        <span class="forward-cell-tag">Athlete mobility</span>
+        <h3>Mobility Pathways</h3>
+        <p>The mobility memo and supporting tools for athletes, families, and counselors navigating recruiting, transfer-era pressure, and the gap between visibility and access.</p>
+        <div class="deliv">Mobility memo &middot; Counselor reference</div>
+      </div>
+      <div class="forward-cell">
+        <span class="forward-cell-num">iii.</span>
+        <span class="forward-cell-tag">Family-facing</span>
+        <h3>Navigate the Deal</h3>
+        <p>NCI's workshop line. Plain-language financial literacy and NIL-rights education for student-athletes, families, schools, and compliance teams. Delivered as live sessions or licensed materials.</p>
+        <div class="deliv">Workshop &middot; Licensed curriculum</div>
       </div>
     </div>
-    <div class="container nav-wrap">
-      <a class="brand-lockup" href="index.html" aria-label="Northstar Civic Institute home">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Tm9ydGhzdGFyIENpdmljIEluc3RpdHV0ZSBtYXJrPC90aXRsZT4KICA8ZGVzYyBpZD0iZGVzYyI+QSBnb2xkIG5vcnRoIHN0YXIgb24gYSBuYXZ5IHJvdW5kZWQgc3F1YXJlLjwvZGVzYz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSIjMUIyQTRBIi8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M1QTU1QSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii4yNSIvPgogIDxwYXRoIGQ9Ik02MCAxOCBMNjYgNTAgTDk4IDYwIEw2NiA3MCBMNjAgMTAyIEw1NCA3MCBMMjIgNjAgTDU0IDUwIFoiIGZpbGw9IiNDNUE1NUEiLz4KICA8cGF0aCBkPSJNNjAgNDAgTDY1IDU2IEw4MCA2MCBMNjUgNjQgTDYwIDgwIEw1NSA2NCBMNDAgNjAgTDU1IDU2IFoiIGZpbGw9IiMxQjJBNEEiLz4KICA8Y2lyY2xlIGN4PSI2MCIgY3k9IjYwIiByPSI0IiBmaWxsPSIjQzVBNTVBIi8+Cjwvc3ZnPgo=" alt="Northstar Civic Institute mark">
-        <div class="brand-copy">
-          <small>Research and policy institute</small>
-          <strong>Northstar Civic Institute</strong>
-        </div>
-      </a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
-        <span></span><span></span><span></span>
-        <span class="sr-only">Open menu</span>
-      </button>
-      <nav class="nav-links" id="site-nav" aria-label="Primary">
-        <a href="index.html">Home</a><a href="about.html">About</a><a href="initiatives.html">Initiatives</a><a class="active" href="mseem.html">MSEEM</a><a href="briefs.html">Briefs</a><a href="legislation.html">Policy</a><a href="ledger-strategy-group.html">LSG</a><a class="button primary nav-cta" href="contact.html">Contact</a>
-      </nav>
+    <div class="forward-cta">
+      <a class="btn btn-primary" href="/contact.html">Request MSEEM Forward consulting <span class="arrow">→</span></a>
+      <a class="btn btn-ghost" href="/contact.html">Schedule Navigate the Deal</a>
     </div>
-  </header>
-  <main id="main-content">
-<section class="page-hero ">
-  <div class="container hero-grid">
+  </div>
+</div>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">03<span>Connected materials</span></div>
+    <div class="section-title">
+      <h2>The platform has real things attached to it.</h2>
+      <p class="desc">MSEEM is supported by named products and public-facing materials that make its function, scope, and audience clear.</p>
+    </div>
+  </div>
+  <div class="materials">
+    <a class="mat" href="/initiatives.html#program-lines">
+      <span class="mat-eyebrow">Named product</span>
+      <h3>NIL Access Audit</h3>
+      <p class="mat-body">A public-facing audit frame for identifying opportunity gaps, readiness questions, and institutional blind spots in NIL-era systems.</p>
+      <div class="mat-tags"><span class="tag">Audit</span><span class="tag">Opportunity mapping</span></div>
+      <span class="mat-link">View in portfolio</span>
+    </a>
+    <a class="mat" href="/brief-6.html">
+      <span class="mat-eyebrow">Special report</span>
+      <h3>Beyond Meritocracy</h3>
+      <p class="mat-body">Brief 06 adds recruiting equity to the MSEEM lane by showing how wealth, visibility, and transfer-era pressure shape who gets recruited and who is left behind.</p>
+      <div class="mat-tags"><span class="tag">Recruiting equity</span><span class="tag">Visibility</span></div>
+      <span class="mat-link">Read Brief 06</span>
+    </a>
+    <a class="mat" href="/contact.html">
+      <span class="mat-eyebrow">Workshop line</span>
+      <h3>Navigate the Deal</h3>
+      <p class="mat-body">A workshop-ready line that translates NIL rights, risk, and financial literacy into language athletes, families, and schools can use.</p>
+      <div class="mat-tags"><span class="tag">Workshop</span><span class="tag">Family-facing</span></div>
+      <span class="mat-link">Request a workshop</span>
+    </a>
+    <a class="mat" href="/contact.html">
+      <span class="mat-eyebrow">District application</span>
+      <h3>Scorecards and audits</h3>
+      <p class="mat-body">Use the framework for district-facing readiness reviews, compliance-adjacent support, and public-value measurement.</p>
+      <div class="mat-tags"><span class="tag">Districts</span><span class="tag">Scorecards</span></div>
+      <span class="mat-link">Discuss a scorecard</span>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">04<span>Who this is for</span></div>
+    <div class="section-title">
+      <h2>Use MSEEM with the audiences who need a system view.</h2>
+      <p class="desc">The platform is strongest with institutions that need more than a slogan. They need a way to measure what is happening, where it breaks down, and what to do next.</p>
+    </div>
+  </div>
+  <div class="aud-grid">
+    <div class="aud"><span class="aud-mark">i.</span><span class="aud-tag">Districts and ISDs</span><h3>Readiness reviews</h3><p>Assess readiness, access, and support gaps across athlete-opportunity systems.</p></div>
+    <div class="aud"><span class="aud-mark">ii.</span><span class="aud-tag">Athletic departments</span><h3>NIL readiness</h3><p>Frame NIL readiness, recruiting visibility, and athlete-protection questions without collapsing them into marketing language.</p></div>
+    <div class="aud"><span class="aud-mark">iii.</span><span class="aud-tag">Funders and partners</span><h3>Grant targeting</h3><p>Understand where a grant, pilot, or support line is actually strengthening access.</p></div>
+    <div class="aud"><span class="aud-mark">iv.</span><span class="aud-tag">Legislators and agencies</span><h3>Policy grounding</h3><p>Ground policy questions in observable conditions rather than assumptions about fairness.</p></div>
+  </div>
+</section>
+
+</main>
+
+<div class="why">
+  <div class="why-inner">
+    <div class="why-mark">&ldquo;</div>
+    <div class="why-body">
+      <p>Michigan institutions do not just need NIL policy. They need <span class="accent">visibility and access infrastructure</span>. Athlete opportunity depends on more than permission. It depends on whether institutions can see, support, and fairly route people through the system.</p>
+      <div class="why-attribution">Operating thesis &middot; MSEEM</div>
+    </div>
+  </div>
+</div>
+
+<div class="closing-wrap">
+  <div class="closing-inner">
     <div>
-      <span class="eyebrow">Measurement and accountability platform</span>
-      <h1>MSEEM measures whether opportunity in sports-adjacent systems is being distributed in a visible, fair, and accountable way.</h1>
-      <p class="lead">Michigan Sports Equity and Economic Mobility is the framework that ties NIL readiness, district audits, recruiting-equity questions, and athlete-opportunity governance into one usable lane.</p>
-      <div class="hero-actions"><a class="button secondary" href="brief-6.html">Read Brief 06</a><a class="button primary" href="contact.html">Request an MSEEM briefing</a></div>
+      <div class="closing-mark">Policy starts at practice</div>
+      <h2>Use MSEEM when the problem is <span class="accent">bigger than one athlete</span>, one team, or one rule.</h2>
+      <p>The platform is the public bridge between the brief library, the NIL readiness work, and NCI's broader argument about underused infrastructure.</p>
     </div>
-    <aside class="hero-panel">
-      <div class="hero-badge">Policy starts at practice</div>
-      <h2 class="hero-panel-title">Measurement and accountability for equitable opportunity.</h2>
-      <p class="hero-panel-copy">Use MSEEM when the question is not just whether a policy exists, but whether opportunity is actually being distributed in a visible, fair, and usable way.</p>
-      <div class="hero-mini-grid"><div><strong>PlayStrong</strong><span>Flagship implementation model</span></div><div><strong>MSEEM</strong><span>Measurement and accountability platform</span></div><div><strong>Brief library</strong><span>Briefs and reports</span></div><div><strong>Community Equity Lab</strong><span>Applied community layer</span></div></div>
-    </aside>
-  </div>
-</section>
-<section class="section surface-band">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="kicker">What MSEEM measures</span>
-        <h2>Four practical lenses.</h2>
-      </div>
-      <p>This is the simplest public explanation of the framework. It is designed to be repeated in decks, district briefings, and future scorecards.</p>
+    <div class="closing-cta">
+      <a class="btn btn-primary" href="/brief-6.html">Read Brief 06 <span class="arrow">→</span></a>
+      <a class="btn btn-ghost" href="/initiatives.html">See the portfolio</a>
+      <a class="btn btn-ghost" href="/contact.html">Request an MSEEM briefing</a>
     </div>
-    <div class="grid-2"><article class="card "><span class="card-kicker">Access</span><h3>Who gets in</h3><p>Track where cost, geography, participation design, and institutional gatekeeping shape who can enter or stay in the pathway.</p></article><article class="card "><span class="card-kicker">Visibility</span><h3>Who gets seen</h3><p>Look at film, data, discoverability, scouting access, and the infrastructure that turns talent into opportunity.</p></article><article class="card "><span class="card-kicker">Readiness</span><h3>Who is prepared</h3><p>Assess whether schools, districts, and athletic departments have the tools, policies, and education needed for NIL-era decision-making.</p></article><article class="card "><span class="card-kicker">Public value</span><h3>What the system is producing</h3><p>Ask whether current practices are actually creating broader educational and economic opportunity, not just promotional claims.</p></article></div>
   </div>
-</section>
-<section class="section ">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="kicker">Connected public-facing materials</span>
-        <h2>MSEEM now has real things attached to it.</h2>
-      </div>
-      <p>The platform now has dedicated framing that makes its function, scope, and audience clear.</p>
-    </div>
-    <div class="grid-2"><article class="card "><span class="card-kicker">Named product</span><h3>NIL Access Audit</h3><p>A public-facing audit frame for identifying opportunity gaps, readiness questions, and institutional blind spots in NIL-era systems.</p><div class="meta-row"><span class="meta-chip">Audit</span><span class="meta-chip">Opportunity mapping</span></div><a class="text-link" href="initiatives.html#program-lines">View in portfolio</a></article><article class="card "><span class="card-kicker">Special report</span><h3>Beyond Meritocracy</h3><p>Brief 06 adds recruiting equity to the MSEEM lane by showing how wealth, visibility, and transfer-era pressure shape who gets recruited and who is left behind.</p><div class="meta-row"><span class="meta-chip">Recruiting equity</span><span class="meta-chip">Visibility</span></div><a class="text-link" href="brief-6.html">Read Brief 06</a></article><article class="card "><span class="card-kicker">Workshop line</span><h3>Navigate the Deal</h3><p>A workshop-ready line that translates NIL rights, risk, and financial literacy into language athletes, families, and schools can use.</p><div class="meta-row"><span class="meta-chip">Workshop</span><span class="meta-chip">Family-facing</span></div><a class="text-link" href="contact.html">Request a workshop</a></article><article class="card "><span class="card-kicker">District application</span><h3>Scorecards and audits</h3><p>Use the framework for district-facing readiness reviews, compliance-adjacent support, and public-value measurement.</p><div class="meta-row"><span class="meta-chip">Districts</span><span class="meta-chip">Scorecards</span></div></article></div>
-  </div>
-</section>
-<section class="section ">
-  <div class="container">
-    <div class="section-head">
-      <div>
-        <span class="kicker">Who this is for</span>
-        <h2>Use MSEEM with the audiences who need a system view.</h2>
-      </div>
-      <p>The platform is strongest with institutions that need more than a slogan. They need a way to measure what is happening, where it breaks down, and what to do next.</p>
-    </div>
-    <div class="grid-2"><article class="card "><span class="card-kicker">Audience</span><h3>Districts and ISDs</h3><p>Use MSEEM to assess readiness, access, and support gaps across athlete-opportunity systems.</p></article><article class="card "><span class="card-kicker">Audience</span><h3>Athletic departments</h3><p>Use MSEEM to frame NIL readiness, recruiting visibility, and athlete-protection questions without collapsing them into marketing language.</p></article><article class="card "><span class="card-kicker">Audience</span><h3>Funders and partners</h3><p>Use MSEEM to understand where a grant, pilot, or support line is actually strengthening access.</p></article><article class="card "><span class="card-kicker">Audience</span><h3>Legislators and agencies</h3><p>Use MSEEM to ground policy questions in observable conditions rather than assumptions about fairness.</p></article></div>
-  </div>
-</section>
-<section class="section surface-band"><div class="container split-callout align-center"><div><span class="kicker">Why this matters for Michigan</span><h2>Michigan institutions do not just need NIL policy. They need visibility and access infrastructure.</h2></div><p>That is the shift this page is built to make. MSEEM helps explain why athlete opportunity depends on more than permission. It depends on whether institutions can see, support, and fairly route people through the system.</p></div></section>
-<section class="section cta-shell">
-  <div class="container cta-banner">
-    <div>
-      <span class="eyebrow light">MSEEM next step</span>
-      <h2>Use MSEEM when the problem is bigger than one athlete, one team, or one rule.</h2>
-      <p>The platform is the public bridge between your brief library, your NIL readiness work, and your broader argument about underused infrastructure.</p>
-    </div>
-    <div class="cta-actions"><a class="button secondary" href="brief-6.html">Read Brief 06</a><a class="button light" href="initiatives.html">See the portfolio</a><a class="button primary" href="contact.html">Request an MSEEM briefing</a></div>
-  </div>
-</section>
-  </main>
-  <footer class="site-footer">
-  <div class="container footer-grid">
-    <div>
-      <div class="footer-brand">
-        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAgMTIwIiByb2xlPSJpbWciIGFyaWEtbGFiZWxsZWRieT0idGl0bGUgZGVzYyI+CiAgPHRpdGxlIGlkPSJ0aXRsZSI+Tm9ydGhzdGFyIENpdmljIEluc3RpdHV0ZSBtYXJrPC90aXRsZT4KICA8ZGVzYyBpZD0iZGVzYyI+QSBnb2xkIG5vcnRoIHN0YXIgb24gYSBuYXZ5IHJvdW5kZWQgc3F1YXJlLjwvZGVzYz4KICA8cmVjdCB3aWR0aD0iMTIwIiBoZWlnaHQ9IjEyMCIgcng9IjI2IiBmaWxsPSIjMUIyQTRBIi8+CiAgPGNpcmNsZSBjeD0iNjAiIGN5PSI2MCIgcj0iMzgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI0M1QTU1QSIgc3Ryb2tlLXdpZHRoPSIxLjUiIG9wYWNpdHk9Ii4yNSIvPgogIDxwYXRoIGQ9Ik02MCAxOCBMNjYgNTAgTDk4IDYwIEw2NiA3MCBMNjAgMTAyIEw1NCA3MCBMMjIgNjAgTDU0IDUwIFoiIGZpbGw9IiNDNUE1NUEiLz4KICA8cGF0aCBkPSJNNjAgNDAgTDY1IDU2IEw4MCA2MCBMNjUgNjQgTDYwIDgwIEw1NSA2NCBMNDAgNjAgTDU1IDU2IFoiIGZpbGw9IiMxQjJBNEEiLz4KICA8Y2lyY2xlIGN4PSI2MCIgY3k9IjYwIiByPSI0IiBmaWxsPSIjQzVBNTVBIi8+Cjwvc3ZnPgo=" alt="Northstar Civic Institute mark">
-        <div>
-          <strong>Northstar Civic Institute</strong>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+          <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+          <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+          <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+        </svg>
+        <div class="foot-brand-text">
+          <h4>Northstar Civic Institute</h4>
           <p>A nonpartisan research and policy organization building evidence-based programs, audits, and public tools for Michigan communities.</p>
         </div>
       </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="/about.html">About</a>
+        <a href="/initiatives.html">Initiatives</a>
+        <a href="/mseem.html">MSEEM</a>
+        <a href="/briefs.html">Briefs</a>
+        <a href="/legislation.html">Policy</a>
+      </div>
+      <div class="foot-col">
+        <h5>Divisions</h5>
+        <a href="/community-equity-lab.html">Community Equity Lab</a>
+        <a href="/civil-governance-lab.html">Civil Governance Lab</a>
+        <a href="/ledger-strategy-group.html">Ledger Strategy Group</a>
+      </div>
+      <div class="foot-col">
+        <h5>Connect</h5>
+        <a href="/contact.html">Contact</a>
+        <a href="mailto:donavan@nciresearch.org" class="email">donavan@nciresearch.org</a>
+      </div>
     </div>
-    <div>
-      <strong>Explore</strong>
-      <p><a href="about.html">About</a><br><a href="initiatives.html">Initiatives</a><br><a href="mseem.html">MSEEM</a><br><a href="briefs.html">Briefs</a><br><a href="legislation.html">Policy</a></p>
-    </div>
-    <div>
-      <strong>Connect</strong>
-      <p><a href="contact.html">Contact</a><br><a href="mailto:donavan@nciresearch.org">donavan@nciresearch.org</a><br><a href="community-equity-lab.html">Community Equity Lab</a><br><a href="ledger-strategy-group.html">Ledger Strategy Group</a><br><a href="briefs.html">Brief library</a></p>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Northstar Civic Institute. All rights reserved.</div>
+      <div class="nonprofit">501(c)(3) nonprofit organization</div>
     </div>
   </div>
-  <div class="container footer-bottom">&copy; 2026 Northstar Civic Institute. All rights reserved.</div>
 </footer>
-<script>
-(function () {
-  function ready(fn) {
-    if (document.readyState !== 'loading') fn();
-    else document.addEventListener('DOMContentLoaded', fn);
-  }
 
-  ready(function () {
-    const toggles = Array.from(document.querySelectorAll('[data-nav-toggle]'));
-    toggles.forEach(function (toggle, index) {
-      const controlledId = toggle.getAttribute('aria-controls');
-      let nav = controlledId ? document.getElementById(controlledId) : null;
-      if (!nav) {
-        const wrap = toggle.closest('.nav-wrap') || toggle.parentElement;
-        nav = wrap ? wrap.querySelector('.nav-links') : document.querySelector('.nav-links');
-      }
-      if (!nav) return;
-
-      if (!nav.id) nav.id = 'site-nav-' + (index + 1);
-      toggle.setAttribute('aria-controls', nav.id);
-      toggle.setAttribute('aria-expanded', 'false');
-
-      function closeNav() {
-        toggle.setAttribute('aria-expanded', 'false');
-        nav.classList.remove('is-open');
-        document.body.classList.remove('nav-open');
-      }
-
-      function openNav() {
-        toggle.setAttribute('aria-expanded', 'true');
-        nav.classList.add('is-open');
-        document.body.classList.add('nav-open');
-      }
-
-      toggle.addEventListener('click', function (event) {
-        event.preventDefault();
-        event.stopPropagation();
-        const expanded = toggle.getAttribute('aria-expanded') === 'true';
-        if (expanded) closeNav(); else openNav();
-      });
-
-      nav.querySelectorAll('a').forEach(function (link) {
-        link.addEventListener('click', closeNav);
-      });
-
-      document.addEventListener('keydown', function (event) {
-        if (event.key === 'Escape') closeNav();
-      });
-
-      document.addEventListener('click', function (event) {
-        if (!nav.contains(event.target) && !toggle.contains(event.target)) closeNav();
-      });
-
-      window.addEventListener('resize', function () {
-        if (window.innerWidth > 840) closeNav();
-      });
-    });
-
-    const filterGroup = document.querySelector('[data-filter-group]');
-    const filterContainer = document.querySelector('[data-filter-container]');
-    if (filterGroup && filterContainer) {
-      const buttons = Array.from(filterGroup.querySelectorAll('[data-filter]'));
-      const cards = Array.from(filterContainer.querySelectorAll('[data-tags]'));
-      buttons.forEach(function (button) {
-        button.addEventListener('click', function () {
-          const filter = button.getAttribute('data-filter');
-          buttons.forEach(function (b) { b.classList.remove('is-active'); });
-          button.classList.add('is-active');
-          cards.forEach(function (card) {
-            const tags = (card.getAttribute('data-tags') || '').split(/\s+/).filter(Boolean);
-            const show = filter === 'all' || tags.includes(filter);
-            card.style.display = show ? '' : 'none';
-          });
-        });
-      });
-    }
-
-    const mailtoForm = document.getElementById('mailto-form');
-    if (mailtoForm) {
-      mailtoForm.addEventListener('submit', function (event) {
-        event.preventDefault();
-        const data = new FormData(mailtoForm);
-        const name = data.get('name') || '';
-        const organization = data.get('organization') || '';
-        const email = data.get('email') || '';
-        const type = data.get('type') || 'General inquiry';
-        const message = data.get('message') || '';
-        const subject = encodeURIComponent(type + ' inquiry from ' + name);
-        const body = encodeURIComponent(
-          'Name: ' + name + '\n' +
-          'Organization: ' + organization + '\n' +
-          'Email: ' + email + '\n' +
-          'Inquiry type: ' + type + '\n\n' +
-          message
-        );
-        window.location.href = 'mailto:donavan@nciresearch.org?subject=' + subject + '&body=' + body;
-      });
-    }
-  });
-})();
-
-</script>
 </body>
 </html>

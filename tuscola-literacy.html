@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Tuscola Literacy and Student Readiness | Northstar Civic Institute</title>
+<link rel="canonical" href="https://nciresearch.org/tuscola-literacy.html" />
+<meta name="description" content="A public-facing implementation and accountability brief on literacy, dyslexia, and student readiness in Tuscola County, prepared by Northstar Civic Institute and Community Equity Lab." />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Northstar Civic Institute" />
+<meta property="og:title" content="Tuscola Literacy and Student Readiness | Northstar Civic Institute" />
+<meta property="og:description" content="A public-facing implementation and accountability brief for literacy, dyslexia, and student readiness in Tuscola County." />
+<meta property="og:url" content="https://nciresearch.org/tuscola-literacy.html" />
+<meta property="og:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Tuscola Literacy and Student Readiness | Northstar Civic Institute" />
+<meta name="twitter:description" content="A public-facing implementation and accountability brief for literacy, dyslexia, and student readiness in Tuscola County." />
+<meta name="twitter:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --navy:#1B2A4A; --navy-2:#2A3A5C; --navy-deep:#131C30;
+  --gold:#C5A55A; --gold-2:#D4B570; --gold-soft:rgba(197,165,90,0.12);
+  --paper:#FBFAF6; --ivory:#F4EFE3; --paper-2:#F7F3EA;
+  --ink:#15192A; --slate:#5A6478; --slate-2:#8089A0;
+  --rule:rgba(27,42,74,0.10); --rule-strong:rgba(27,42,74,0.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-weight:400;font-feature-settings:'ss01','kern'}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:'Source Serif 4',Georgia,serif;font-weight:600;letter-spacing:-0.015em;color:var(--navy)}
+h1{font-size:clamp(2.2rem,4.8vw,3.6rem);line-height:1.08;letter-spacing:-0.025em}
+h2{font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.14}
+h3{font-size:1.25rem;line-height:1.25}
+h4{font-size:1rem;letter-spacing:-0.01em}
+p{font-weight:400}
+
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:var(--navy);color:var(--gold);padding:0.6rem 1rem;z-index:100}
+
+header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,0.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.head-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.6rem;gap:1.5rem}
+.brand{display:flex;align-items:center;gap:0.85rem;text-decoration:none;color:var(--navy)}
+.brand .mark{width:40px;height:40px;border-radius:9px;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-eyebrow{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-weight:500}
+.brand-name{font-family:'Source Serif 4',serif;font-weight:600;font-size:1.05rem;color:var(--navy)}
+nav{display:flex;gap:1.7rem;align-items:center}
+nav a{color:var(--navy);text-decoration:none;font-size:0.9rem;font-weight:500;padding:0.4rem 0;position:relative;white-space:nowrap}
+nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--gold);transition:width 0.25s ease}
+nav a:hover::after{width:100%}
+nav a.current::after{width:100%}
+.menu-btn{display:none;background:none;border:1px solid var(--rule);padding:0.45rem 0.6rem;cursor:pointer;border-radius:3px}
+.menu-btn svg{width:20px;height:20px;stroke:var(--navy)}
+@media (max-width:1080px){nav{gap:1.2rem}nav a{font-size:0.85rem}}
+@media (max-width:980px){nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule);padding:0.8rem 1.6rem;box-shadow:0 8px 20px rgba(27,42,74,0.06)}nav.open{display:flex}nav a{padding:0.85rem 0;border-bottom:1px solid var(--rule);width:100%}nav a:last-child{border-bottom:none}nav a::after{display:none}.menu-btn{display:block}}
+
+.pub-hero{max-width:1280px;margin:0 auto;padding:4rem 1.6rem 3rem;border-bottom:1px solid var(--rule)}
+.pub-meta{display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;font-size:0.72rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-weight:500;margin-bottom:2rem;border-top:2px solid var(--gold);padding-top:0.6rem}
+.pub-meta .label{color:var(--gold);font-weight:600}
+.pub-meta .sep{color:var(--rule-strong)}
+.pub-hero h1{max-width:22ch}
+.pub-hero h1 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.pub-hero .subtitle{margin-top:1.4rem;font-family:'Source Serif 4',serif;font-size:1.3rem;line-height:1.45;color:var(--slate);font-style:italic;font-weight:400;max-width:56ch}
+.pub-byline{margin-top:2.4rem;display:flex;gap:1.5rem;flex-wrap:wrap;font-size:0.85rem;color:var(--slate)}
+.pub-byline strong{color:var(--navy);font-weight:600}
+
+.callout{max-width:1280px;margin:3rem auto 0;padding:0 1.6rem}
+.callout-inner{background:var(--ivory);border-left:3px solid var(--gold);padding:1.6rem 2rem}
+.callout-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);font-weight:600;margin-bottom:0.6rem}
+.callout-inner p{color:var(--navy);font-size:0.98rem;line-height:1.6;max-width:74ch}
+
+/* Stat row */
+.stat-row{max-width:1280px;margin:3rem auto 0;padding:0 1.6rem}
+.stat-inner{
+  background:var(--navy);color:var(--paper);
+  padding:2.4rem 2.2rem;
+  display:grid;grid-template-columns:0.7fr 1fr;gap:2.4rem;align-items:center;
+  position:relative;
+}
+@media (max-width:780px){.stat-inner{grid-template-columns:1fr;gap:1.4rem}}
+.stat-num-big{
+  font-family:'Source Serif 4',serif;
+  font-size:clamp(3.5rem,8vw,5.5rem);
+  color:var(--gold);font-weight:600;line-height:0.95;
+  letter-spacing:-0.03em;
+}
+.stat-num-big .pct{font-size:0.5em;vertical-align:top;margin-left:0.05em;color:var(--gold-2)}
+.stat-body p{color:rgba(248,245,238,0.85);font-size:1.05rem;line-height:1.55}
+.stat-body .source{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:500;margin-top:0.7rem}
+
+section{max-width:1280px;margin:0 auto;padding:4.5rem 1.6rem}
+.section-head{display:flex;align-items:baseline;gap:2rem;margin-bottom:2.4rem;flex-wrap:wrap}
+.section-num{font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--gold);font-weight:600;letter-spacing:0.06em;border-top:2px solid var(--gold);padding-top:0.55rem;min-width:70px;flex-shrink:0}
+.section-num span{display:block;margin-top:0.15rem;color:var(--slate);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase}
+.section-title{flex:1;min-width:260px}
+.section-title h2{max-width:30ch}
+.section-title .desc{color:var(--slate);margin-top:0.7rem;max-width:62ch;font-size:1rem;line-height:1.6}
+
+.prose{max-width:74ch;color:var(--ink)}
+.prose p{margin-bottom:1rem;font-size:1.02rem;line-height:1.7}
+.prose p.lead{font-family:'Source Serif 4',serif;font-size:1.2rem;line-height:1.55;color:var(--navy);margin-bottom:1.3rem;font-weight:400}
+.prose strong{color:var(--navy);font-weight:600}
+
+.why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+@media (max-width:780px){.why-list{grid-template-columns:1fr}}
+.why-item{padding:1.8rem 1.6rem 1.8rem 0;border-bottom:1px solid var(--rule);display:flex;gap:1rem;align-items:start}
+.why-item:nth-child(odd){padding-right:2rem}
+.why-item:nth-child(even){padding-left:2rem;border-left:1px solid var(--rule)}
+@media (max-width:780px){.why-item:nth-child(even){padding-left:0;border-left:none}.why-item:nth-child(odd){padding-right:0}}
+.why-num{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.1rem;font-weight:500;min-width:32px;padding-top:0.1rem}
+.why-body{color:var(--slate);font-size:0.96rem;line-height:1.6}
+.why-body strong{color:var(--navy);font-weight:600}
+
+/* Two-col context matrix */
+.context{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.context-row{display:grid;grid-template-columns:1fr 1.6fr;gap:2.5rem;padding:1.6rem 0;border-bottom:1px solid var(--rule);align-items:start}
+.context-row:last-child{border-bottom:none}
+@media (max-width:780px){.context-row{grid-template-columns:1fr;gap:0.6rem}}
+.context-head{display:grid;grid-template-columns:1fr 1.6fr;gap:2.5rem;padding:0.9rem 0;border-bottom:2px solid var(--navy)}
+@media (max-width:780px){.context-head{display:none}}
+.context-head .col{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:600}
+.context-row .label{font-family:'Source Serif 4',serif;font-weight:600;color:var(--navy);font-size:1rem}
+.context-row .desc{color:var(--slate);font-size:0.94rem;line-height:1.6}
+
+/* Gap matrix (3 columns) */
+.gap-matrix{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.gap-row{display:grid;grid-template-columns:1fr 1.8fr 1.4fr;gap:2.2rem;padding:1.7rem 0;border-bottom:1px solid var(--rule);align-items:start}
+.gap-row:last-child{border-bottom:none}
+@media (max-width:880px){.gap-row{grid-template-columns:1fr;gap:0.6rem}}
+.gap-head{display:grid;grid-template-columns:1fr 1.8fr 1.4fr;gap:2.2rem;padding:0.9rem 0;border-bottom:2px solid var(--navy)}
+@media (max-width:880px){.gap-head{display:none}}
+.gap-head .col{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:600}
+.gap-row .label{font-family:'Source Serif 4',serif;font-weight:600;color:var(--navy);font-size:1rem}
+.gap-row .desc{color:var(--slate);font-size:0.92rem;line-height:1.6}
+.gap-row .metric{color:var(--navy);font-size:0.85rem;font-weight:500;padding:0.5rem 0.8rem;background:var(--gold-soft);border-left:2px solid var(--gold)}
+
+/* Framework tiers */
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:880px){.tiers{grid-template-columns:1fr}}
+.tier{padding:2rem 1.6rem;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:0.9rem}
+.tier:last-child{border-right:none}
+@media (max-width:880px){.tier{border-right:none;border-bottom:1px solid var(--rule)}.tier:last-child{border-bottom:none}}
+.tier-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.05rem;font-weight:500}
+.tier-tag{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.tier h3{color:var(--navy);font-size:1.15rem}
+.tier-body{color:var(--slate);font-size:0.93rem;line-height:1.6;flex:1}
+.tier-contributors{font-size:0.78rem;color:var(--navy);font-weight:600;padding-top:0.6rem;border-top:1px dashed var(--rule)}
+
+/* Steps */
+.steps{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.step{display:grid;grid-template-columns:auto 1fr 1.2fr;gap:1.8rem;padding:1.6rem 0;border-bottom:1px solid var(--rule);align-items:start}
+.step:last-child{border-bottom:none}
+@media (max-width:780px){.step{grid-template-columns:auto 1fr;gap:0.8rem}.step .step-output{grid-column:1/-1}}
+.step-num{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.4rem;font-weight:500;min-width:38px;padding-top:0.05rem}
+.step-action{color:var(--ink);font-size:0.98rem;line-height:1.6}
+.step-action strong{color:var(--navy);font-weight:600}
+.step-output{color:var(--navy);font-size:0.85rem;font-weight:500;padding:0.5rem 0.85rem;background:var(--gold-soft);border-left:2px solid var(--gold);font-style:normal}
+
+/* KPI grid */
+.kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:880px){.kpis{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.kpis{grid-template-columns:1fr}}
+.kpi{padding:1.6rem 1.3rem;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);display:flex;flex-direction:column;gap:0.5rem}
+.kpi:nth-child(4n){border-right:none}
+.kpi:nth-last-child(-n+4){border-bottom:none}
+@media (max-width:880px){.kpi:nth-child(4n){border-right:1px solid var(--rule)}.kpi:nth-child(2n){border-right:none}.kpi:nth-last-child(-n+2){border-bottom:none}}
+@media (max-width:520px){.kpi{border-right:none}.kpi:last-child{border-bottom:none}}
+.kpi-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:0.9rem;font-weight:500}
+.kpi h4{color:var(--navy);font-size:0.98rem;line-height:1.25}
+.kpi .cadence{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--slate);font-weight:500;margin-top:auto;padding-top:0.5rem}
+
+/* Posture questions */
+.posture{background:var(--navy);color:var(--paper);padding:5rem 1.6rem}
+.posture-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1.4fr;gap:3rem;align-items:start}
+@media (max-width:880px){.posture-inner{grid-template-columns:1fr}}
+.posture h2{color:var(--paper);max-width:22ch}
+.posture h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.posture .desc{color:rgba(248,245,238,0.7);margin-top:1.2rem;font-size:1.02rem;line-height:1.6;max-width:48ch}
+.questions{display:flex;flex-direction:column;gap:1.3rem}
+.q{display:flex;gap:1.2rem;align-items:start}
+.q-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-size:1.1rem;font-weight:600;font-style:italic;min-width:32px;line-height:1.3}
+.q p{color:rgba(248,245,238,0.85);font-size:1rem;line-height:1.55}
+
+/* Asking / boundaries */
+.asks{display:grid;grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:780px){.asks{grid-template-columns:1fr}}
+.ask{padding:2.4rem 2rem;border-right:1px solid var(--rule);display:flex;flex-direction:column;gap:1rem}
+.ask:last-child{border-right:none}
+@media (max-width:780px){.ask{border-right:none;border-bottom:1px solid var(--rule)}.ask:last-child{border-bottom:none}}
+.ask.boundary{background:var(--paper-2)}
+.ask-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);font-weight:600}
+.ask.boundary .ask-label{color:var(--slate)}
+.ask h3{color:var(--navy);font-size:1.3rem;max-width:24ch}
+.ask ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.6rem}
+.ask li{color:var(--slate);font-size:0.94rem;line-height:1.55;padding-left:1.3rem;position:relative}
+.ask li::before{content:'';position:absolute;left:0;top:0.55rem;width:8px;height:1px;background:var(--gold)}
+.ask.boundary li::before{background:var(--slate)}
+
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.5rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;border-radius:2px;transition:all 0.22s ease;letter-spacing:0.01em}
+.btn-primary{background:var(--navy);color:var(--paper);border:1px solid var(--navy)}
+.btn-primary:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn-ghost{background:transparent;color:var(--navy);border:1px solid var(--rule-strong)}
+.btn-ghost:hover{border-color:var(--navy);background:var(--paper-2)}
+.btn .arrow{transition:transform 0.22s ease}
+.btn:hover .arrow{transform:translateX(3px)}
+
+.closing-wrap{background:var(--ivory);padding:5rem 1.6rem;border-top:1px solid var(--rule);margin-top:0}
+.closing-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+@media (max-width:780px){.closing-inner{grid-template-columns:1fr;gap:2rem}}
+.closing-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.2rem;font-weight:600}
+.closing-inner h2{color:var(--navy);max-width:22ch}
+.closing-inner h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.closing-inner p{color:var(--slate);margin-top:1.2rem;font-size:1.02rem;line-height:1.6;max-width:48ch}
+.closing-cta{display:flex;flex-direction:column;gap:0.7rem}
+
+footer{background:var(--navy-deep);color:rgba(248,245,238,0.7);padding:4.5rem 1.6rem 2rem}
+.foot-inner{max-width:1280px;margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(248,245,238,0.08)}
+@media (max-width:780px){.foot-grid{grid-template-columns:1fr 1fr;gap:2.2rem}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
+.foot-brand{display:flex;gap:1.2rem;align-items:start}
+.foot-brand .mark{width:52px;height:52px;border-radius:10px;flex-shrink:0}
+.foot-brand-text h4{color:var(--paper);margin-bottom:0.5rem;font-size:1.05rem}
+.foot-brand-text p{font-size:0.9rem;line-height:1.6;color:rgba(248,245,238,0.65);max-width:36ch}
+.foot-col h5{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);margin-bottom:1.1rem;font-weight:600}
+.foot-col a{display:block;color:rgba(248,245,238,0.7);text-decoration:none;padding:0.32rem 0;font-size:0.92rem;transition:color 0.2s ease}
+.foot-col a:hover{color:var(--gold)}
+.foot-col .email{font-size:0.88rem;color:rgba(248,245,238,0.55);margin-top:0.2rem}
+.foot-bottom{padding-top:1.5rem;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-bottom .nonprofit{color:var(--gold);font-weight:500;letter-spacing:0.02em}
+
+.strip{background:var(--ivory);border-bottom:1px solid var(--rule);padding:0.6rem 1.6rem;text-align:center;font-size:0.82rem;color:var(--navy);letter-spacing:0.02em}
+.strip strong{color:var(--gold);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-size:0.72rem}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<div class="strip"><strong>A program of Community Equity Lab</strong> &nbsp; Northstar Civic Institute</div>
+
+<header>
+  <div class="head-inner">
+    <a class="brand" href="/index.html">
+      <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+        <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+        <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+        <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-eyebrow">Research and policy institute</span>
+        <span class="brand-name">Northstar Civic Institute</span>
+      </span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('nav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/initiatives.html">Initiatives</a>
+      <a href="/mseem.html">MSEEM</a>
+      <a href="/civil-governance-lab.html">Civil Governance</a>
+      <a href="/briefs.html" class="current">Briefs</a>
+      <a href="/legislation.html">Policy</a>
+      <a href="/ledger-strategy-group.html">LSG</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="pub-hero">
+  <div class="pub-meta">
+    <span class="label">Tuscola Literacy</span>
+    <span class="sep">/</span>
+    <span>Implementation and accountability brief</span>
+    <span class="sep">/</span>
+    <span>Public discussion draft, May 2026</span>
+  </div>
+  <h1>Tuscola literacy, dyslexia, and student readiness, <span class="accent">measured as implementation</span>.</h1>
+  <div class="subtitle">A public-facing brief for the 97th District on how to see whether state literacy funding, screening, dyslexia follow-up, and family communication are translating into student growth.</div>
+  <div class="pub-byline">
+    <span><strong>Prepared by</strong> Northstar Civic Institute / Community Equity Lab</span>
+    <span><strong>Series</strong> 2026 Initiative briefs</span>
+  </div>
+</div>
+
+<div class="callout">
+  <div class="callout-inner">
+    <div class="callout-label">Purpose of this brief</div>
+    <p>This brief is for public discussion. It does not ask for legislation, appropriations, or an endorsement. It identifies a practical opportunity to help Tuscola County align literacy implementation, dyslexia screening, family engagement, and student readiness around measurable outcomes.</p>
+  </div>
+</div>
+
+<div class="stat-row">
+  <div class="stat-inner">
+    <div class="stat-num-big">38.9<span class="pct">%</span></div>
+    <div class="stat-body">
+      <p>Of Michigan third graders were proficient in English language arts in 2025, according to statewide M-STEP results. For Tuscola County, the challenge is not just compliance. It is whether small and rural districts can see what is working before the gap widens.</p>
+      <div class="source">Source: MDE, 2025 M-STEP results presentation</div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">01<span>Executive summary</span></div>
+    <div class="section-title">
+      <h2>Michigan is in a literacy implementation moment.</h2>
+    </div>
+  </div>
+  <div class="prose">
+    <p class="lead">The state is implementing new K-12 literacy and dyslexia requirements, maintaining major investments in early literacy coaches, and continuing state support for high-quality literacy materials and tools.</p>
+    <p>For Tuscola County, the challenge is not just compliance. It is whether small and rural districts have a shared, practical way to track what is working: screening, IRIPs, intervention dosage, attendance, family communication, dyslexia follow-up, and movement into later readiness pathways such as CTE.</p>
+    <p>Northstar Civic Institute recommends a <strong>county-level literacy readiness framework</strong> that helps local leaders see implementation gaps early, align state-funded supports, and connect school-based literacy work with family and community partners.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">02<span>Why Tuscola County</span></div>
+    <div class="section-title">
+      <h2>Literacy is accountability, public health, and workforce, all at once.</h2>
+      <p class="desc">Five reasons Tuscola County is the right place to build a county-level readiness framework before scaling the model.</p>
+    </div>
+  </div>
+  <div class="why-list">
+    <div class="why-item">
+      <span class="why-num">i.</span>
+      <div class="why-body">The 97th House District spans portions of Bay, Genesee, Saginaw, and Tuscola counties, and includes service as <strong>Vice Chair of House Oversight</strong>.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">ii.</span>
+      <div class="why-body">Literacy is an <strong>accountability issue</strong>: public funds for coaches, materials, assessments, and professional learning should produce measurable student outcomes.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">iii.</span>
+      <div class="why-body">Literacy is a <strong>public health and family stability issue</strong>: early reading difficulty affects confidence, absenteeism, parent stress, behavioral health, and long-term economic mobility.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">iv.</span>
+      <div class="why-body">Literacy is a <strong>workforce issue</strong>: Tuscola Technology Center serves 11th and 12th grade students and adult residents through CTE programming, but students need strong reading, comprehension, and technical-vocabulary skills long before they reach CTE.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">v.</span>
+      <div class="why-body">Tuscola ISD connects nine local districts: Akron-Fairgrove, Caro, Cass City, Kingston, Mayville, Millington, Reese, Unionville-Sebewaing, and Vassar. That makes the ISD the <strong>logical convener for shared implementation visibility</strong>.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">03<span>Policy and funding context</span></div>
+    <div class="section-title">
+      <h2>State law creates the opportunity. Implementation lands locally.</h2>
+      <p class="desc">Six elements of Michigan's current literacy ecosystem that shape what is possible at the county level.</p>
+    </div>
+  </div>
+  <div class="context">
+    <div class="context-head">
+      <div class="col">Policy or funding area</div>
+      <div class="col">What it means for Tuscola County</div>
+    </div>
+    <div class="context-row">
+      <div class="label">PA 146 and PA 147 implementation</div>
+      <div class="desc">MDE maintains current resources for the literacy and dyslexia framework, including district resources, parent letters, IRIP guidance, and screening and progress monitoring assessment information.</div>
+    </div>
+    <div class="context-row">
+      <div class="label">K-3 screening and progress monitoring</div>
+      <div class="desc">MDE opened an additional request-for-submission process for K-3 screening and progress monitoring assessments in 2026, with scheduled updates through December 2026.</div>
+    </div>
+    <div class="context-row">
+      <div class="label">Section 35a(4) early literacy coaches</div>
+      <div class="desc">FY 2026 funds early literacy coaches at ISDs, with each ISD eligible for funding per coach and a minimum of two coaches. Tuscola ISD is positioned to deploy coaches across its nine connected districts.</div>
+    </div>
+    <div class="context-row">
+      <div class="label">Section 35m literacy materials and tools</div>
+      <div class="desc">Section 35m supports the Committee for Literacy Achievement and funding tied to ranked literacy series, materials, professional development, tools, and services.</div>
+    </div>
+    <div class="context-row">
+      <div class="label">State assessment context</div>
+      <div class="desc">MDE describes M-STEP as a criterion-referenced snapshot that should be part of a balanced assessment system, not the only measure of literacy progress.</div>
+    </div>
+    <div class="context-row">
+      <div class="label">Funding alignment</div>
+      <div class="desc">Local philanthropy, family-support partners, library and afterschool programming, and CTE pathways round out the funding and capacity stack that any readiness framework should map.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">04<span>The local implementation gap</span></div>
+    <div class="section-title">
+      <h2>Six implementation gaps that translate state policy into student outcomes.</h2>
+      <p class="desc">State law and state funding create opportunity, but the implementation burden lands locally. The public should be able to see whether money, coaching, materials, and interventions are translating into student growth.</p>
+    </div>
+  </div>
+  <div class="gap-matrix">
+    <div class="gap-head">
+      <div class="col">Gap</div>
+      <div class="col">Why it matters</div>
+      <div class="col">Public-facing metric</div>
+    </div>
+    <div class="gap-row">
+      <div class="label">Screening-to-support gap</div>
+      <div class="desc">Screening only matters if identified students receive timely, evidence-based support.</div>
+      <div class="metric">Percent screened. Percent receiving follow-up. Time from flag to support.</div>
+    </div>
+    <div class="gap-row">
+      <div class="label">IRIP implementation gap</div>
+      <div class="desc">Individual Reading Improvement Plans can become paperwork unless goals, progress monitoring, and family communication are tracked.</div>
+      <div class="metric">IRIP completion, goal attainment, and exit rate.</div>
+    </div>
+    <div class="gap-row">
+      <div class="label">Intervention dosage gap</div>
+      <div class="desc">Students may be assigned support but not receive enough minutes or consistency to show growth.</div>
+      <div class="metric">Minutes per week of supplemental instruction at Tier 2 and Tier 3.</div>
+    </div>
+    <div class="gap-row">
+      <div class="label">Attendance gap</div>
+      <div class="desc">Chronic absence undercuts even strong curriculum and coaching.</div>
+      <div class="metric">K-3 chronic absenteeism. Attendance recovery contacts. 60-day re-engagement.</div>
+    </div>
+    <div class="gap-row">
+      <div class="label">Family communication gap</div>
+      <div class="desc">Parents need clear language on dyslexia flags, reading plans, and what to do at home.</div>
+      <div class="metric">Family contact rate. Plain-language parent materials. Attendance at literacy events.</div>
+    </div>
+    <div class="gap-row">
+      <div class="label">Readiness gap</div>
+      <div class="desc">Early literacy issues eventually appear in CTE readiness, workplace reading, technical vocabulary, and graduation outcomes.</div>
+      <div class="metric">Cohort tracking from K-3 reading to middle-school ELA and later CTE readiness indicators.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">05<span>Recommended framework</span></div>
+    <div class="section-title">
+      <h2>Three tiers, each with measurable indicators.</h2>
+      <p class="desc">A Tuscola Literacy Readiness Framework that connects school-based literacy work, family and community support, and long-term student readiness.</p>
+    </div>
+  </div>
+  <div class="tiers">
+    <div class="tier">
+      <span class="tier-mark">i.</span>
+      <span class="tier-tag">Tier 1</span>
+      <h3>School literacy implementation</h3>
+      <p class="tier-body">K-3 screening coverage, IRIP creation and progress, intervention dosage, M-STEP, local benchmark assessments, and dyslexia follow-up.</p>
+      <div class="tier-contributors">Tuscola ISD, local districts, early literacy coaches, curriculum leaders.</div>
+    </div>
+    <div class="tier">
+      <span class="tier-mark">ii.</span>
+      <span class="tier-tag">Tier 2</span>
+      <h3>Family and community support</h3>
+      <p class="tier-body">Family literacy contacts, attendance outreach, library and afterschool and summer reading participation, plain-language translated materials, and parent feedback.</p>
+      <div class="tier-contributors">Schools, libraries, community organizations, family-support partners, local philanthropy.</div>
+    </div>
+    <div class="tier">
+      <span class="tier-mark">iii.</span>
+      <span class="tier-tag">Tier 3</span>
+      <h3>Long-term student readiness</h3>
+      <p class="tier-body">Middle-school ELA trajectory, chronic absenteeism trend, 8th grade ELA, CTE readiness, course completion, graduation, and postsecondary or workforce indicators.</p>
+      <div class="tier-contributors">Tuscola ISD, local districts, Tuscola Technology Center, workforce and postsecondary partners.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">06<span>A 60-day plan</span></div>
+    <div class="section-title">
+      <h2>From baseline to scorecard in five steps.</h2>
+      <p class="desc">A practical sequence that produces a Tuscola Literacy Readiness Scorecard v1 within sixty days of partner commitment, without exposing student-level data.</p>
+    </div>
+  </div>
+  <div class="steps">
+    <div class="step">
+      <span class="step-num">01</span>
+      <div class="step-action"><strong>Confirm the data baseline</strong> using MI School Data and Tuscola ISD or local district records. No student-level data exposed.</div>
+      <div class="step-output">One-page baseline dashboard</div>
+    </div>
+    <div class="step">
+      <span class="step-num">02</span>
+      <div class="step-action"><strong>Interview literacy coaches, district administrators, family and community partners</strong>, and one Tuscola Technology Center representative.</div>
+      <div class="step-output">Implementation-gap memo focused on capacity, not blame</div>
+    </div>
+    <div class="step">
+      <span class="step-num">03</span>
+      <div class="step-action"><strong>Map current funding and supports</strong>: 35a coaches, 35m materials and tools, LETRS and professional learning, local philanthropy, community literacy supports.</div>
+      <div class="step-output">Funding alignment checklist</div>
+    </div>
+    <div class="step">
+      <span class="step-num">04</span>
+      <div class="step-action"><strong>Define a small set of public KPIs</strong> that districts can track without creating excessive reporting burden.</div>
+      <div class="step-output">Tuscola Literacy Readiness Scorecard v1</div>
+    </div>
+    <div class="step">
+      <span class="step-num">05</span>
+      <div class="step-action"><strong>Return to local leaders</strong> with findings and suggested next steps.</div>
+      <div class="step-output">Public summary and private implementation notes</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">07<span>Suggested KPIs</span></div>
+    <div class="section-title">
+      <h2>Eight indicators that fit a county scorecard without burying educators.</h2>
+      <p class="desc">Designed to be tracked at reasonable cadence and reported publicly without exposing student-level data.</p>
+    </div>
+  </div>
+  <div class="kpis">
+    <div class="kpi">
+      <span class="kpi-mark">i.</span>
+      <h4>K-3 screening completion</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Confirms students are being identified early under the new literacy and dyslexia framework.</p>
+      <div class="cadence">Fall / winter / spring</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">ii.</span>
+      <h4>IRIP creation and progress</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Shows whether identified students have plans and whether those plans produce growth.</p>
+      <div class="cadence">Quarterly</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">iii.</span>
+      <h4>Intervention dosage</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Prevents support assigned from being confused with support delivered.</p>
+      <div class="cadence">Monthly or quarterly</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">iv.</span>
+      <h4>K-3 chronic absenteeism</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Attendance is a leading indicator for whether literacy intervention can work.</p>
+      <div class="cadence">Monthly</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">v.</span>
+      <h4>Family literacy engagement</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Captures the home and school communication side of implementation.</p>
+      <div class="cadence">Quarterly</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">vi.</span>
+      <h4>Subgroup gap monitoring</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Ensures aggregate progress does not hide disparities by economic status, disability, or English learner status.</p>
+      <div class="cadence">Annual with midyear review</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">vii.</span>
+      <h4>Middle-school ELA trajectory</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Tests whether early gains hold beyond third grade.</p>
+      <div class="cadence">Annual</div>
+    </div>
+    <div class="kpi">
+      <span class="kpi-mark">viii.</span>
+      <h4>CTE readiness connection</h4>
+      <p style="color:var(--slate);font-size:0.86rem;line-height:1.5">Connects early literacy to later technical learning and employability.</p>
+      <div class="cadence">Annual</div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="posture">
+  <div class="posture-inner">
+    <div>
+      <h2>Oversight <span class="accent">without overreach</span>.</h2>
+      <p class="desc">The strongest posture for a legislative office is not to manage the literacy system. It is to ask clear accountability questions that the system can answer in plain language.</p>
+    </div>
+    <div class="questions">
+      <div class="q"><span class="q-mark">i.</span><p>Are state literacy funds reaching the districts and students that need them?</p></div>
+      <div class="q"><span class="q-mark">ii.</span><p>Are districts able to show how screening leads to actual support?</p></div>
+      <div class="q"><span class="q-mark">iii.</span><p>Do parents receive clear information when a child is identified with reading risk or dyslexia characteristics?</p></div>
+      <div class="q"><span class="q-mark">iv.</span><p>Are rural districts getting implementation capacity comparable to larger systems?</p></div>
+      <div class="q"><span class="q-mark">v.</span><p>Can the county show progress without burying educators in another reporting burden?</p></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">08<span>What NCI is asking, and what NCI will not do</span></div>
+    <div class="section-title">
+      <h2>The boundaries of this work are part of the design.</h2>
+      <p class="desc">The ask is small and concrete. The boundaries protect the integrity of any framework NCI produces with Tuscola partners.</p>
+    </div>
+  </div>
+  <div class="asks">
+    <div class="ask">
+      <span class="ask-label">What NCI is asking</span>
+      <h3>A small, concrete starting point.</h3>
+      <ul>
+        <li>Feedback on whether this framing fits the district: literacy as accountability, public health, and workforce readiness.</li>
+        <li>An introduction to the appropriate Tuscola ISD or local district contact for a thirty-minute discovery conversation.</li>
+        <li>Optional suggestions for community partners, library, family-support, foundation, health, or afterschool leaders, who should be represented if a countywide readiness table is useful.</li>
+      </ul>
+    </div>
+    <div class="ask boundary">
+      <span class="ask-label">What NCI will not do</span>
+      <h3>The work has hard boundaries.</h3>
+      <ul>
+        <li>NCI will not publish district-specific claims without verifying current data with official sources.</li>
+        <li>NCI will not request student-level data for a public brief.</li>
+        <li>NCI will not present the framework as a criticism of schools. The goal is implementation support and public accountability.</li>
+        <li>NCI will not ask any legislative office to manage the work. Legislative partners can help identify the right local starting point.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<div class="closing-wrap">
+  <div class="closing-inner">
+    <div>
+      <div class="closing-mark">Tuscola Literacy &middot; Next step</div>
+      <h2>The framework is small enough to start, <span class="accent">specific enough to matter</span>.</h2>
+      <p>If you represent Tuscola ISD, a local district, a literacy coach network, or a community partner, NCI is ready for a thirty-minute discovery conversation about a county-level readiness framework.</p>
+    </div>
+    <div class="closing-cta">
+      <a class="btn btn-primary" href="/contact.html">Open a literacy conversation <span class="arrow">→</span></a>
+      <a class="btn btn-ghost" href="/community-equity-lab.html">See the Community Equity Lab</a>
+      <a class="btn btn-ghost" href="/briefs.html">Back to the brief library</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+          <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+          <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+          <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+        </svg>
+        <div class="foot-brand-text">
+          <h4>Northstar Civic Institute</h4>
+          <p>A nonpartisan research and policy organization building evidence-based programs, audits, and public tools for Michigan communities.</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="/about.html">About</a>
+        <a href="/initiatives.html">Initiatives</a>
+        <a href="/mseem.html">MSEEM</a>
+        <a href="/briefs.html">Briefs</a>
+        <a href="/legislation.html">Policy</a>
+      </div>
+      <div class="foot-col">
+        <h5>Divisions</h5>
+        <a href="/community-equity-lab.html">Community Equity Lab</a>
+        <a href="/civil-governance-lab.html">Civil Governance Lab</a>
+        <a href="/ledger-strategy-group.html">Ledger Strategy Group</a>
+      </div>
+      <div class="foot-col">
+        <h5>Connect</h5>
+        <a href="/contact.html">Contact</a>
+        <a href="mailto:donavan@nciresearch.org" class="email">donavan@nciresearch.org</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Northstar Civic Institute. All rights reserved.</div>
+      <div class="nonprofit">501(c)(3) nonprofit organization</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Civil Governance Lab | Northstar Civic Institute</title>
+<link rel="canonical" href="https://nciresearch.org/civil-governance-lab.html" />
+<meta name="description" content="The NCI Civil Governance Lab builds neutral governance frameworks for surveillance, public records, consumer protection, and emerging public-sector technology. Audits, reporting templates, and implementation tools for Michigan municipalities and the state." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Northstar Civic Institute" />
+<meta property="og:title" content="Civil Governance Lab | Northstar Civic Institute" />
+<meta property="og:description" content="Neutral governance frameworks for surveillance, public records, consumer protection, and emerging public-sector technology." />
+<meta property="og:url" content="https://nciresearch.org/civil-governance-lab.html" />
+<meta property="og:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Civil Governance Lab | Northstar Civic Institute" />
+<meta name="twitter:description" content="Neutral governance frameworks for surveillance, public records, consumer protection, and emerging public-sector technology." />
+<meta name="twitter:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --navy:#1B2A4A; --navy-2:#2A3A5C; --navy-deep:#131C30;
+  --gold:#C5A55A; --gold-2:#D4B570; --gold-soft:rgba(197,165,90,0.12);
+  --paper:#FBFAF6; --ivory:#F4EFE3; --paper-2:#F7F3EA;
+  --ink:#15192A; --slate:#5A6478; --slate-2:#8089A0;
+  --rule:rgba(27,42,74,0.10); --rule-strong:rgba(27,42,74,0.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-weight:400;font-feature-settings:'ss01','kern'}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:'Source Serif 4',Georgia,serif;font-weight:600;letter-spacing:-0.015em;color:var(--navy)}
+h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.06;letter-spacing:-0.025em}
+h2{font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.12}
+h3{font-size:1.3rem;line-height:1.25}
+h4{font-size:1.02rem;letter-spacing:-0.01em}
+p{font-weight:400}
+
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:var(--navy);color:var(--gold);padding:0.6rem 1rem;z-index:100}
+
+header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,0.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.head-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.6rem;gap:1.5rem}
+.brand{display:flex;align-items:center;gap:0.85rem;text-decoration:none;color:var(--navy)}
+.brand .mark{width:40px;height:40px;border-radius:9px;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-eyebrow{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-weight:500}
+.brand-name{font-family:'Source Serif 4',serif;font-weight:600;font-size:1.05rem;color:var(--navy)}
+nav{display:flex;gap:1.7rem;align-items:center}
+nav a{color:var(--navy);text-decoration:none;font-size:0.9rem;font-weight:500;padding:0.4rem 0;position:relative;white-space:nowrap}
+nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--gold);transition:width 0.25s ease}
+nav a:hover::after{width:100%}
+nav a.current::after{width:100%}
+.menu-btn{display:none;background:none;border:1px solid var(--rule);padding:0.45rem 0.6rem;cursor:pointer;border-radius:3px}
+.menu-btn svg{width:20px;height:20px;stroke:var(--navy)}
+@media (max-width:1080px){nav{gap:1.2rem}nav a{font-size:0.85rem}}
+@media (max-width:980px){nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule);padding:0.8rem 1.6rem;box-shadow:0 8px 20px rgba(27,42,74,0.06)}nav.open{display:flex}nav a{padding:0.85rem 0;border-bottom:1px solid var(--rule);width:100%}nav a:last-child{border-bottom:none}nav a::after{display:none}.menu-btn{display:block}}
+
+/* Lab hero — darker, more institutional */
+.lab-hero{
+  background:linear-gradient(180deg, var(--navy) 0%, var(--navy-2) 100%);
+  color:var(--paper);
+  padding:6rem 1.6rem 5rem;
+  position:relative;
+  overflow:hidden;
+}
+.lab-hero::before{
+  content:''; position:absolute; top:0; left:50%;
+  transform:translateX(-50%);
+  width:1px; height:60px; background:var(--gold);
+}
+.lab-hero-inner{max-width:1280px;margin:0 auto;position:relative}
+.lab-eyebrow{
+  font-size:0.72rem; letter-spacing:0.22em; text-transform:uppercase;
+  color:var(--gold); font-weight:600;
+  margin-bottom:1.6rem;
+  display:flex; align-items:center; gap:0.7rem;
+}
+.lab-eyebrow::before{content:'ii.';font-family:'Source Serif 4',serif;font-style:italic;font-size:1rem;letter-spacing:0;color:var(--gold);font-weight:500}
+.lab-hero h1{color:var(--paper);max-width:20ch}
+.lab-hero h1 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.lab-hero .lead{margin-top:1.8rem;max-width:58ch;color:rgba(248,245,238,0.78);font-size:1.12rem;line-height:1.6}
+.lab-hero-cta{display:flex;gap:0.9rem;margin-top:2.4rem;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.5rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;border-radius:2px;transition:all 0.22s ease;letter-spacing:0.01em}
+.btn-primary{background:var(--gold);color:var(--navy);border:1px solid var(--gold)}
+.btn-primary:hover{background:var(--paper);border-color:var(--paper);color:var(--navy)}
+.btn-ghost-dark{background:transparent;color:var(--paper);border:1px solid rgba(248,245,238,0.25)}
+.btn-ghost-dark:hover{border-color:var(--gold);color:var(--gold)}
+.btn-ghost{background:transparent;color:var(--navy);border:1px solid var(--rule-strong)}
+.btn-ghost:hover{border-color:var(--navy);background:var(--paper-2)}
+.btn .arrow{transition:transform 0.22s ease}
+.btn:hover .arrow{transform:translateX(3px)}
+
+/* Lab thesis strip */
+.thesis-strip{
+  background:var(--ivory);
+  padding:3rem 1.6rem;
+  border-bottom:1px solid var(--rule);
+}
+.thesis-inner{
+  max-width:1280px; margin:0 auto;
+  display:grid; grid-template-columns:auto 1fr; gap:2.5rem; align-items:start;
+}
+@media (max-width:780px){.thesis-inner{grid-template-columns:1fr;gap:1.5rem}}
+.thesis-mark{
+  font-family:'Source Serif 4',serif;
+  font-style:italic;
+  font-size:3.5rem; color:var(--gold);
+  line-height:0.6;
+  font-weight:400;
+}
+.thesis-body p{font-family:'Source Serif 4',serif;font-size:1.25rem;line-height:1.5;color:var(--navy);max-width:62ch}
+.thesis-body p .accent{color:var(--gold);font-style:italic}
+.thesis-body .attribution{margin-top:1rem;font-family:'DM Sans',sans-serif;font-size:0.78rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-style:normal}
+
+section{max-width:1280px;margin:0 auto;padding:5.5rem 1.6rem}
+.section-head{display:flex;align-items:baseline;gap:2rem;margin-bottom:3.2rem;flex-wrap:wrap}
+.section-num{font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--gold);font-weight:600;letter-spacing:0.06em;border-top:2px solid var(--gold);padding-top:0.55rem;min-width:70px;flex-shrink:0}
+.section-num span{display:block;margin-top:0.15rem;color:var(--slate);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase}
+.section-title{flex:1;min-width:260px}
+.section-title h2{max-width:30ch}
+.section-title .desc{color:var(--slate);margin-top:0.8rem;max-width:62ch;font-size:1.02rem;line-height:1.6}
+
+/* Focus areas — editorial stacked blocks */
+.focus-stack{display:flex;flex-direction:column;border-top:1px solid var(--rule)}
+.focus{
+  display:grid; grid-template-columns:1fr 2fr 1fr; gap:3rem;
+  padding:3.2rem 0;
+  border-bottom:1px solid var(--rule);
+  align-items:start;
+}
+@media (max-width:880px){.focus{grid-template-columns:1fr;gap:1.2rem}}
+.focus-meta{display:flex;flex-direction:column;gap:0.4rem}
+.focus-mark{font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--gold);font-weight:600;letter-spacing:0.06em}
+.focus-tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.focus-title h3{margin-bottom:0.8rem}
+.focus-title p{color:var(--slate);font-size:1rem;line-height:1.6;max-width:50ch}
+.focus-deliverables{display:flex;flex-direction:column;gap:0.55rem}
+.focus-deliverables .deliv-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:600;margin-bottom:0.3rem}
+.focus-deliverables .deliv{font-size:0.88rem;color:var(--ink);padding:0.4rem 0;border-bottom:1px dashed var(--rule)}
+.focus-deliverables .deliv:last-child{border-bottom:none}
+
+/* Operating posture */
+.posture{
+  background:var(--navy);
+  color:var(--paper);
+  margin-top:4rem;
+  padding:5rem 1.6rem;
+}
+.posture-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start}
+@media (max-width:880px){.posture-inner{grid-template-columns:1fr}}
+.posture h2{color:var(--paper);max-width:22ch}
+.posture h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.posture .desc{color:rgba(248,245,238,0.7);margin-top:1.2rem;font-size:1.02rem;line-height:1.6;max-width:54ch}
+.posture-list{display:flex;flex-direction:column;gap:1.6rem}
+.post{display:flex;gap:1.2rem;align-items:start}
+.post-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-size:1.2rem;font-weight:600;font-style:italic;min-width:32px;line-height:1.2}
+.post-body h4{color:var(--paper);margin-bottom:0.4rem;font-size:1.05rem}
+.post-body p{color:rgba(248,245,238,0.7);font-size:0.95rem;line-height:1.55}
+
+/* Audiences */
+.audiences{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:880px){.audiences{grid-template-columns:1fr}}
+.audience-cell{
+  padding:2.6rem 2rem;
+  border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:0.9rem;
+  transition:background 0.22s ease;
+}
+.audience-cell:last-child{border-right:none}
+@media (max-width:880px){.audience-cell{border-right:none;border-bottom:1px solid var(--rule)}.audience-cell:last-child{border-bottom:none}}
+.audience-cell:hover{background:var(--paper-2)}
+.audience-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.05rem;font-weight:500}
+.audience-tag{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.audience-cell h3{color:var(--navy);font-size:1.3rem}
+.audience-cell p{color:var(--slate);font-size:0.95rem;line-height:1.6}
+
+/* Closing CTA */
+.lab-closing{
+  background:var(--ivory);
+  padding:5rem 1.6rem;
+  border-top:1px solid var(--rule);
+}
+.lab-closing-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+@media (max-width:780px){.lab-closing-inner{grid-template-columns:1fr;gap:2rem}}
+.lab-closing-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.2rem;font-weight:600}
+.lab-closing h2{color:var(--navy);max-width:22ch}
+.lab-closing h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.lab-closing p{color:var(--slate);margin-top:1.2rem;font-size:1.02rem;line-height:1.6;max-width:48ch}
+.lab-closing-cta{display:flex;flex-direction:column;gap:0.7rem}
+
+/* Footer */
+footer{background:var(--navy-deep);color:rgba(248,245,238,0.7);padding:4.5rem 1.6rem 2rem}
+.foot-inner{max-width:1280px;margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(248,245,238,0.08)}
+@media (max-width:780px){.foot-grid{grid-template-columns:1fr 1fr;gap:2.2rem}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
+.foot-brand{display:flex;gap:1.2rem;align-items:start}
+.foot-brand .mark{width:52px;height:52px;border-radius:10px;flex-shrink:0}
+.foot-brand-text h4{color:var(--paper);margin-bottom:0.5rem;font-size:1.05rem}
+.foot-brand-text p{font-size:0.9rem;line-height:1.6;color:rgba(248,245,238,0.65);max-width:36ch}
+.foot-col h5{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);margin-bottom:1.1rem;font-weight:600}
+.foot-col a{display:block;color:rgba(248,245,238,0.7);text-decoration:none;padding:0.32rem 0;font-size:0.92rem;transition:color 0.2s ease}
+.foot-col a:hover{color:var(--gold)}
+.foot-col .email{font-size:0.88rem;color:rgba(248,245,238,0.55);margin-top:0.2rem}
+.foot-bottom{padding-top:1.5rem;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-bottom .nonprofit{color:var(--gold);font-weight:500;letter-spacing:0.02em}
+
+.strip{background:var(--ivory);border-bottom:1px solid var(--rule);padding:0.6rem 1.6rem;text-align:center;font-size:0.82rem;color:var(--navy);letter-spacing:0.02em}
+.strip strong{color:var(--gold);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-size:0.72rem}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<div class="strip"><strong>501(c)(3) approved</strong> &nbsp; A research lab of Northstar Civic Institute</div>
+
+<header>
+  <div class="head-inner">
+    <a class="brand" href="/index.html">
+      <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+        <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+        <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+        <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-eyebrow">Research and policy institute</span>
+        <span class="brand-name">Northstar Civic Institute</span>
+      </span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('nav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/initiatives.html">Initiatives</a>
+      <a href="/mseem.html">MSEEM</a>
+      <a href="/civil-governance-lab.html" class="current">Civil Governance</a>
+      <a href="/briefs.html">Briefs</a>
+      <a href="/legislation.html">Policy</a>
+      <a href="/ledger-strategy-group.html">LSG</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="lab-hero">
+  <div class="lab-hero-inner">
+    <div class="lab-eyebrow">Civil Governance Lab</div>
+    <h1>Neutral governance frameworks for the institutions <span class="accent">already holding the tools</span>.</h1>
+    <p class="lead">The Civil Governance Lab is NCI's institution-facing research lab. It builds readiness checklists, reporting templates, audit frameworks, and procurement guidance for the public bodies running surveillance systems, public records, consumer-finance oversight, and emerging public-sector technology.</p>
+    <div class="lab-hero-cta">
+      <a class="btn btn-primary" href="/contact.html">Request a Lab briefing <span class="arrow">→</span></a>
+      <a class="btn btn-ghost-dark" href="#focus-areas">Read the focus areas</a>
+    </div>
+  </div>
+</div>
+
+<div class="thesis-strip">
+  <div class="thesis-inner">
+    <div class="thesis-mark">&ldquo;</div>
+    <div class="thesis-body">
+      <p>The absence of governance is itself a policy choice. The Lab does not argue about whether public bodies should hold these tools. It asks <span class="accent">whether they are holding them well</span>.</p>
+      <div class="attribution">Operating thesis &middot; Civil Governance Lab</div>
+    </div>
+  </div>
+</div>
+
+<section id="focus-areas">
+  <div class="section-head">
+    <div class="section-num">01<span>Focus areas</span></div>
+    <div class="section-title">
+      <h2>Five lines of work, organized around the institutions that hold the tools.</h2>
+      <p class="desc">The Lab produces frameworks, not advocacy. Each focus area is paired with deliverables a municipality, agency, or legislative office can use, adapt, or sit on a shelf as a readiness reference.</p>
+    </div>
+  </div>
+  <div class="focus-stack">
+
+    <div class="focus" id="alpr">
+      <div class="focus-meta">
+        <span class="focus-mark">01.a</span>
+        <span class="focus-tag">Surveillance governance</span>
+      </div>
+      <div class="focus-title">
+        <h3>ALPR Municipal Data Governance</h3>
+        <p>Automated license plate readers, retention boundaries, warrant-required access procedures, vendor accountability, and quarterly public reporting. The Lab's posture is operational: what does a defensible municipal program look like and how is it documented for the public, journalists, and council oversight.</p>
+      </div>
+      <div class="focus-deliverables">
+        <div class="deliv-label">Published deliverables</div>
+        <div class="deliv">ALPR Governance Readiness Checklist (2026)</div>
+        <div class="deliv">HB 5492 / 5493 technical memo and testimony template</div>
+        <div class="deliv">Quarterly reporting template</div>
+        <div class="deliv">Procurement language library</div>
+      </div>
+    </div>
+
+    <div class="focus" id="foia">
+      <div class="focus-meta">
+        <span class="focus-mark">01.b</span>
+        <span class="focus-tag">Public records governance</span>
+      </div>
+      <div class="focus-title">
+        <h3>Municipal FOIA Modernization</h3>
+        <p>Public records systems built for actual operational use. Standard response timelines, fee policy that respects residents and journalists, redaction discipline, and digital request infrastructure. Designed for clerks and FOIA coordinators who already carry the load.</p>
+      </div>
+      <div class="focus-deliverables">
+        <div class="deliv-label">Deliverables</div>
+        <div class="deliv">Operational audit</div>
+        <div class="deliv">Fee policy template</div>
+        <div class="deliv">Response timeline framework</div>
+        <div class="deliv">Resident-facing guide</div>
+      </div>
+    </div>
+
+    <div class="focus" id="auto-lending">
+      <div class="focus-meta">
+        <span class="focus-mark">01.c</span>
+        <span class="focus-tag">Consumer protection</span>
+      </div>
+      <div class="focus-title">
+        <h3>Auto Lending Transparency</h3>
+        <p>Information asymmetry hits first-time and young vehicle buyers hardest. The Lab develops plain-language consumer disclosure frames, lender-side reporting concepts, and policy framing for the legislators who carry this work. Neutral on prescriptive caps, focused on visibility.</p>
+      </div>
+      <div class="focus-deliverables">
+        <div class="deliv-label">Deliverables</div>
+        <div class="deliv">Consumer disclosure frame</div>
+        <div class="deliv">Lender reporting concept</div>
+        <div class="deliv">Legislative briefing memo</div>
+        <div class="deliv">Resident-facing explainer</div>
+      </div>
+    </div>
+
+    <div class="focus" id="procurement">
+      <div class="focus-meta">
+        <span class="focus-mark">01.d</span>
+        <span class="focus-tag">Procurement discipline</span>
+      </div>
+      <div class="focus-title">
+        <h3>Public-Sector Procurement Discipline</h3>
+        <p>The point at which a public body buys a surveillance system, a data platform, or an algorithmic tool is the moment governance is either built in or skipped. The Lab develops procurement language, contract review templates, and decision frameworks for council members and purchasing officers facing vendor pitches.</p>
+      </div>
+      <div class="focus-deliverables">
+        <div class="deliv-label">Deliverables</div>
+        <div class="deliv">Procurement language library</div>
+        <div class="deliv">Contract review framework</div>
+        <div class="deliv">Vendor questionnaire</div>
+        <div class="deliv">Decision memo template</div>
+      </div>
+    </div>
+
+    <div class="focus" id="emerging">
+      <div class="focus-meta">
+        <span class="focus-mark">01.e</span>
+        <span class="focus-tag">Forward-looking</span>
+      </div>
+      <div class="focus-title">
+        <h3>Emerging Public-Sector Technology</h3>
+        <p>Generative systems, predictive tools, biometric identification, and the next wave of public-sector adoption are coming faster than most municipal governance can absorb. The Lab tracks the operational questions and prepares framework drafts before the procurement conversations arrive.</p>
+      </div>
+      <div class="focus-deliverables">
+        <div class="deliv-label">Deliverables</div>
+        <div class="deliv">Watching brief library</div>
+        <div class="deliv">Use-case scoping memo</div>
+        <div class="deliv">Early framework drafts</div>
+        <div class="deliv">Convening readiness</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="posture">
+  <div class="posture-inner">
+    <div>
+      <h2>What the Lab is, and <span class="accent">what it is not</span>.</h2>
+      <p class="desc">NCI's nonpartisan posture is operational, not rhetorical. The Lab's work has to be useful to a council member running a finance committee, a clerk fielding a records request, and a procurement officer reading a vendor contract. That constraint shapes everything below.</p>
+    </div>
+    <div class="posture-list">
+      <div class="post">
+        <div class="post-mark">i.</div>
+        <div class="post-body"><h4>Frameworks, not advocacy</h4><p>The Lab does not lobby for or against specific procurements, vendors, or political positions. It builds the templates and reporting frames that allow public bodies to govern the decision well, whichever way it goes.</p></div>
+      </div>
+      <div class="post">
+        <div class="post-mark">ii.</div>
+        <div class="post-body"><h4>Implementation over rhetoric</h4><p>Every focus area is paired with deliverables a municipality can actually use. If a checklist, template, or memo does not exist, the work is not finished.</p></div>
+      </div>
+      <div class="post">
+        <div class="post-mark">iii.</div>
+        <div class="post-body"><h4>Local experience as evidence</h4><p>Decisions made in Bay City, Saginaw, Tuscola, Kalamazoo, and Genesee County belong in the state conversation. The Lab treats local governance experience as data, not as anecdote.</p></div>
+      </div>
+      <div class="post">
+        <div class="post-mark">iv.</div>
+        <div class="post-body"><h4>Cross-aisle by design</h4><p>The Lab's products are written to be usable by Mackinac Center analysts and ACLU staff in the same legislative meeting. That dual readability is the design constraint, not a marketing claim.</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">02<span>Audiences</span></div>
+    <div class="section-title">
+      <h2>Who the Lab is built for.</h2>
+      <p class="desc">The Lab's products are designed for three audiences. Each one needs a different entry point, but all three end at the same operational frame.</p>
+    </div>
+  </div>
+  <div class="audiences">
+    <div class="audience-cell">
+      <span class="audience-mark">i.</span>
+      <span class="audience-tag">Municipal and county</span>
+      <h3>Councils, clerks, and procurement</h3>
+      <p>Use Lab templates, checklists, and audit frames when a vendor pitch, a records backlog, or a public reporting requirement lands on the agenda.</p>
+    </div>
+    <div class="audience-cell">
+      <span class="audience-mark">ii.</span>
+      <span class="audience-tag">Legislative offices</span>
+      <h3>Committee staff and policy advisors</h3>
+      <p>Use Lab briefing memos, framing notes, and policy concept papers when bills touch surveillance, public records, consumer protection, or emerging tech.</p>
+    </div>
+    <div class="audience-cell">
+      <span class="audience-mark">iii.</span>
+      <span class="audience-tag">Agencies and adjacent</span>
+      <h3>State agencies, associations, and journalists</h3>
+      <p>Use Lab reference materials when verifying scope, comparing local practices, or grounding reporting in standardized governance language.</p>
+    </div>
+  </div>
+</section>
+
+<div class="lab-closing">
+  <div class="lab-closing-inner">
+    <div>
+      <div class="lab-closing-mark">Civil Governance Lab</div>
+      <h2>The institutions already hold the tools. The Lab helps them <span class="accent">hold them well</span>.</h2>
+      <p>If you are working through a vendor procurement, a records modernization push, or a legislative draft on surveillance, lending, or emerging technology, the Lab is built for that conversation.</p>
+    </div>
+    <div class="lab-closing-cta">
+      <a class="btn btn-primary" href="/contact.html">Request a Lab briefing <span class="arrow">→</span></a>
+      <a class="btn btn-ghost" href="/briefs.html">Browse the brief library</a>
+      <a class="btn btn-ghost" href="/community-equity-lab.html">See the Community Equity Lab</a>
+    </div>
+  </div>
+</div>
+
+</main>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+          <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+          <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+          <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+        </svg>
+        <div class="foot-brand-text">
+          <h4>Northstar Civic Institute</h4>
+          <p>A nonpartisan research and policy organization building evidence-based programs, audits, and public tools for Michigan communities.</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="/about.html">About</a>
+        <a href="/initiatives.html">Initiatives</a>
+        <a href="/mseem.html">MSEEM</a>
+        <a href="/briefs.html">Briefs</a>
+        <a href="/legislation.html">Policy</a>
+      </div>
+      <div class="foot-col">
+        <h5>Divisions</h5>
+        <a href="/community-equity-lab.html">Community Equity Lab</a>
+        <a href="/civil-governance-lab.html">Civil Governance Lab</a>
+        <a href="/ledger-strategy-group.html">Ledger Strategy Group</a>
+      </div>
+      <div class="foot-col">
+        <h5>Connect</h5>
+        <a href="/contact.html">Contact</a>
+        <a href="mailto:donavan@nciresearch.org" class="email">donavan@nciresearch.org</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Northstar Civic Institute. All rights reserved.</div>
+      <div class="nonprofit">501(c)(3) nonprofit organization</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>GroundWork | Northstar Civic Institute</title>
+<link rel="canonical" href="https://nciresearch.org/groundwork.html" />
+<meta name="description" content="GroundWork is a youth agriculture and land-access initiative from Northstar Civic Institute and Community Equity Lab, using existing institutions to create supervised land-based learning opportunities in Tuscola County." />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Northstar Civic Institute" />
+<meta property="og:title" content="GroundWork | Northstar Civic Institute" />
+<meta property="og:description" content="A youth agriculture and land-access initiative for Tuscola County. Agricultural access, land-based learning, and youth readiness through existing local infrastructure." />
+<meta property="og:url" content="https://nciresearch.org/groundwork.html" />
+<meta property="og:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="GroundWork | Northstar Civic Institute" />
+<meta name="twitter:description" content="A youth agriculture and land-access initiative for Tuscola County." />
+<meta name="twitter:image" content="https://nciresearch.org/downloads/logos/nci-logo-lockup.png" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+
+<style>
+:root{
+  --navy:#1B2A4A; --navy-2:#2A3A5C; --navy-deep:#131C30;
+  --gold:#C5A55A; --gold-2:#D4B570; --gold-soft:rgba(197,165,90,0.12);
+  --paper:#FBFAF6; --ivory:#F4EFE3; --paper-2:#F7F3EA;
+  --ink:#15192A; --slate:#5A6478; --slate-2:#8089A0;
+  --rule:rgba(27,42,74,0.10); --rule-strong:rgba(27,42,74,0.18);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+body{font-family:'DM Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55;font-weight:400;font-feature-settings:'ss01','kern'}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,h4{font-family:'Source Serif 4',Georgia,serif;font-weight:600;letter-spacing:-0.015em;color:var(--navy)}
+h1{font-size:clamp(2.2rem,4.8vw,3.6rem);line-height:1.08;letter-spacing:-0.025em}
+h2{font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.14}
+h3{font-size:1.25rem;line-height:1.25}
+h4{font-size:1rem;letter-spacing:-0.01em}
+p{font-weight:400}
+
+.skip{position:absolute;left:-9999px}
+.skip:focus{left:1rem;top:1rem;background:var(--navy);color:var(--gold);padding:0.6rem 1rem;z-index:100}
+
+header{position:sticky;top:0;z-index:50;background:rgba(251,250,246,0.94);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--rule)}
+.head-inner{max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:1.1rem 1.6rem;gap:1.5rem}
+.brand{display:flex;align-items:center;gap:0.85rem;text-decoration:none;color:var(--navy)}
+.brand .mark{width:40px;height:40px;border-radius:9px;flex-shrink:0}
+.brand-text{display:flex;flex-direction:column;line-height:1.1}
+.brand-eyebrow{font-size:0.65rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--slate);font-weight:500}
+.brand-name{font-family:'Source Serif 4',serif;font-weight:600;font-size:1.05rem;color:var(--navy)}
+nav{display:flex;gap:1.7rem;align-items:center}
+nav a{color:var(--navy);text-decoration:none;font-size:0.9rem;font-weight:500;padding:0.4rem 0;position:relative;white-space:nowrap}
+nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:1.5px;background:var(--gold);transition:width 0.25s ease}
+nav a:hover::after{width:100%}
+nav a.current::after{width:100%}
+.menu-btn{display:none;background:none;border:1px solid var(--rule);padding:0.45rem 0.6rem;cursor:pointer;border-radius:3px}
+.menu-btn svg{width:20px;height:20px;stroke:var(--navy)}
+@media (max-width:1080px){nav{gap:1.2rem}nav a{font-size:0.85rem}}
+@media (max-width:980px){nav{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--paper);border-bottom:1px solid var(--rule);padding:0.8rem 1.6rem;box-shadow:0 8px 20px rgba(27,42,74,0.06)}nav.open{display:flex}nav a{padding:0.85rem 0;border-bottom:1px solid var(--rule);width:100%}nav a:last-child{border-bottom:none}nav a::after{display:none}.menu-btn{display:block}}
+
+/* Publication-style hero */
+.pub-hero{
+  max-width:1280px;margin:0 auto;
+  padding:4rem 1.6rem 3rem;
+  border-bottom:1px solid var(--rule);
+}
+.pub-meta{
+  display:flex;align-items:center;gap:1.2rem;flex-wrap:wrap;
+  font-size:0.72rem;text-transform:uppercase;letter-spacing:0.16em;
+  color:var(--slate);font-weight:500;
+  margin-bottom:2rem;
+  border-top:2px solid var(--gold);padding-top:0.6rem;
+}
+.pub-meta .label{color:var(--gold);font-weight:600}
+.pub-meta .sep{color:var(--rule-strong)}
+.pub-hero h1{max-width:22ch}
+.pub-hero h1 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.pub-hero .subtitle{
+  margin-top:1.4rem;font-family:'Source Serif 4',serif;
+  font-size:1.3rem;line-height:1.45;color:var(--slate);
+  font-style:italic;font-weight:400;max-width:54ch;
+}
+.pub-byline{
+  margin-top:2.4rem;display:flex;gap:1.5rem;flex-wrap:wrap;
+  font-size:0.85rem;color:var(--slate);
+}
+.pub-byline strong{color:var(--navy);font-weight:600}
+
+/* Purpose callout */
+.callout{
+  max-width:1280px;margin:3rem auto 0;
+  padding:0 1.6rem;
+}
+.callout-inner{
+  background:var(--ivory);
+  border-left:3px solid var(--gold);
+  padding:1.6rem 2rem;
+}
+.callout-label{
+  font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;
+  color:var(--gold);font-weight:600;margin-bottom:0.6rem;
+}
+.callout-inner p{color:var(--navy);font-size:0.98rem;line-height:1.6;max-width:74ch}
+
+section{max-width:1280px;margin:0 auto;padding:4.5rem 1.6rem}
+.section-head{display:flex;align-items:baseline;gap:2rem;margin-bottom:2.4rem;flex-wrap:wrap}
+.section-num{font-family:'Source Serif 4',serif;font-size:0.9rem;color:var(--gold);font-weight:600;letter-spacing:0.06em;border-top:2px solid var(--gold);padding-top:0.55rem;min-width:70px;flex-shrink:0}
+.section-num span{display:block;margin-top:0.15rem;color:var(--slate);font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase}
+.section-title{flex:1;min-width:260px}
+.section-title h2{max-width:30ch}
+.section-title .desc{color:var(--slate);margin-top:0.7rem;max-width:62ch;font-size:1rem;line-height:1.6}
+
+.prose{max-width:74ch;color:var(--ink)}
+.prose p{margin-bottom:1rem;font-size:1.02rem;line-height:1.7}
+.prose p.lead{font-family:'Source Serif 4',serif;font-size:1.2rem;line-height:1.55;color:var(--navy);margin-bottom:1.3rem;font-weight:400}
+.prose strong{color:var(--navy);font-weight:600}
+
+/* Why list */
+.why-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--rule)}
+@media (max-width:780px){.why-list{grid-template-columns:1fr}}
+.why-item{
+  padding:1.8rem 1.6rem 1.8rem 0;
+  border-bottom:1px solid var(--rule);
+  display:flex;gap:1rem;align-items:start;
+}
+.why-item:nth-child(odd){padding-right:2rem}
+.why-item:nth-child(even){padding-left:2rem;border-left:1px solid var(--rule)}
+@media (max-width:780px){.why-item:nth-child(even){padding-left:0;border-left:none}.why-item:nth-child(odd){padding-right:0}}
+.why-num{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.1rem;font-weight:500;min-width:32px;padding-top:0.1rem}
+.why-body{color:var(--slate);font-size:0.96rem;line-height:1.6}
+.why-body strong{color:var(--navy);font-weight:600}
+
+/* Workstream / matrix table */
+.matrix{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.matrix-row{
+  display:grid;grid-template-columns:1fr 2fr 1.4fr;gap:2.5rem;
+  padding:1.8rem 0;border-bottom:1px solid var(--rule);
+  align-items:start;
+}
+.matrix-row:last-child{border-bottom:none}
+@media (max-width:880px){.matrix-row{grid-template-columns:1fr;gap:0.7rem}}
+.matrix-head{display:grid;grid-template-columns:1fr 2fr 1.4fr;gap:2.5rem;padding:1rem 0;border-bottom:2px solid var(--navy)}
+@media (max-width:880px){.matrix-head{display:none}}
+.matrix-head .col{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--gold);font-weight:600}
+.matrix-row .label{
+  font-family:'Source Serif 4',serif;font-weight:600;
+  color:var(--navy);font-size:1.05rem;
+}
+.matrix-row .desc{color:var(--slate);font-size:0.94rem;line-height:1.6}
+.matrix-row .output{
+  color:var(--navy);font-size:0.88rem;font-weight:500;
+  padding:0.6rem 0.85rem;background:var(--gold-soft);
+  border-left:2px solid var(--gold);
+}
+
+/* Pilot ladder */
+.ladder{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:880px){.ladder{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.ladder{grid-template-columns:1fr}}
+.rung{
+  padding:1.8rem 1.4rem;border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:0.7rem;
+}
+.rung:last-child{border-right:none}
+@media (max-width:880px){.rung:nth-child(2){border-right:none}.rung:nth-child(1),.rung:nth-child(2){border-bottom:1px solid var(--rule)}}
+@media (max-width:520px){.rung{border-right:none;border-bottom:1px solid var(--rule)}.rung:last-child{border-bottom:none}}
+.rung-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1.05rem;font-weight:500}
+.rung-tag{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.rung h3{color:var(--navy);font-size:1.1rem}
+.rung p{color:var(--slate);font-size:0.9rem;line-height:1.55;flex:1}
+.rung .scope{color:var(--navy);font-size:0.82rem;font-weight:600;padding-top:0.4rem;border-top:1px dashed var(--rule)}
+
+/* Partners / stack */
+.partners{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+@media (max-width:880px){.partners{grid-template-columns:1fr}}
+.partner{
+  padding:1.8rem 1.6rem;border-right:1px solid var(--rule);
+  display:flex;flex-direction:column;gap:0.7rem;
+}
+.partner:last-child{border-right:none}
+@media (max-width:880px){.partner{border-right:none;border-bottom:1px solid var(--rule)}.partner:last-child{border-bottom:none}}
+.partner-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-style:italic;font-size:1rem;font-weight:500}
+.partner-tag{font-size:0.68rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--slate);font-weight:500}
+.partner h3{color:var(--navy);font-size:1.1rem}
+.partner p{color:var(--slate);font-size:0.92rem;line-height:1.55}
+
+/* Caveat box */
+.caveat{
+  max-width:1280px;margin:0 auto;
+  padding:0 1.6rem;
+}
+.caveat-inner{
+  background:var(--paper-2);
+  border:1px solid var(--rule);
+  border-left:3px solid var(--gold);
+  padding:1.4rem 1.8rem;
+}
+.caveat-label{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);font-weight:600;margin-bottom:0.4rem}
+.caveat-inner p{color:var(--slate);font-size:0.94rem;line-height:1.6}
+
+/* Closing */
+.btn{display:inline-flex;align-items:center;gap:0.5rem;padding:0.9rem 1.5rem;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:500;text-decoration:none;border-radius:2px;transition:all 0.22s ease;letter-spacing:0.01em}
+.btn-primary{background:var(--navy);color:var(--paper);border:1px solid var(--navy)}
+.btn-primary:hover{background:var(--gold);border-color:var(--gold);color:var(--navy)}
+.btn-ghost{background:transparent;color:var(--navy);border:1px solid var(--rule-strong)}
+.btn-ghost:hover{border-color:var(--navy);background:var(--paper-2)}
+.btn .arrow{transition:transform 0.22s ease}
+.btn:hover .arrow{transform:translateX(3px)}
+
+.closing-wrap{background:var(--ivory);padding:5rem 1.6rem;border-top:1px solid var(--rule);margin-top:3rem}
+.closing-inner{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:3rem;align-items:center}
+@media (max-width:780px){.closing-inner{grid-template-columns:1fr;gap:2rem}}
+.closing-mark{font-family:'Source Serif 4',serif;color:var(--gold);font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;margin-bottom:1.2rem;font-weight:600}
+.closing-inner h2{color:var(--navy);max-width:22ch}
+.closing-inner h2 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.closing-inner p{color:var(--slate);margin-top:1.2rem;font-size:1.02rem;line-height:1.6;max-width:48ch}
+.closing-cta{display:flex;flex-direction:column;gap:0.7rem}
+
+footer{background:var(--navy-deep);color:rgba(248,245,238,0.7);padding:4.5rem 1.6rem 2rem}
+.foot-inner{max-width:1280px;margin:0 auto}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:3rem;padding-bottom:3rem;border-bottom:1px solid rgba(248,245,238,0.08)}
+@media (max-width:780px){.foot-grid{grid-template-columns:1fr 1fr;gap:2.2rem}}
+@media (max-width:520px){.foot-grid{grid-template-columns:1fr;gap:2rem}}
+.foot-brand{display:flex;gap:1.2rem;align-items:start}
+.foot-brand .mark{width:52px;height:52px;border-radius:10px;flex-shrink:0}
+.foot-brand-text h4{color:var(--paper);margin-bottom:0.5rem;font-size:1.05rem}
+.foot-brand-text p{font-size:0.9rem;line-height:1.6;color:rgba(248,245,238,0.65);max-width:36ch}
+.foot-col h5{font-size:0.7rem;text-transform:uppercase;letter-spacing:0.16em;color:var(--gold);margin-bottom:1.1rem;font-weight:600}
+.foot-col a{display:block;color:rgba(248,245,238,0.7);text-decoration:none;padding:0.32rem 0;font-size:0.92rem;transition:color 0.2s ease}
+.foot-col a:hover{color:var(--gold)}
+.foot-col .email{font-size:0.88rem;color:rgba(248,245,238,0.55);margin-top:0.2rem}
+.foot-bottom{padding-top:1.5rem;font-size:0.82rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.foot-bottom .nonprofit{color:var(--gold);font-weight:500;letter-spacing:0.02em}
+
+.strip{background:var(--ivory);border-bottom:1px solid var(--rule);padding:0.6rem 1.6rem;text-align:center;font-size:0.82rem;color:var(--navy);letter-spacing:0.02em}
+.strip strong{color:var(--gold);font-weight:600;letter-spacing:0.06em;text-transform:uppercase;font-size:0.72rem}
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip">Skip to content</a>
+
+<div class="strip"><strong>A program of Community Equity Lab</strong> &nbsp; Northstar Civic Institute</div>
+
+<header>
+  <div class="head-inner">
+    <a class="brand" href="/index.html">
+      <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+        <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+        <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+        <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+        <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-eyebrow">Research and policy institute</span>
+        <span class="brand-name">Northstar Civic Institute</span>
+      </span>
+    </a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" onclick="document.querySelector('nav').classList.toggle('open');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+    <nav aria-label="Primary">
+      <a href="/index.html">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/initiatives.html" class="current">Initiatives</a>
+      <a href="/mseem.html">MSEEM</a>
+      <a href="/civil-governance-lab.html">Civil Governance</a>
+      <a href="/briefs.html">Briefs</a>
+      <a href="/legislation.html">Policy</a>
+      <a href="/ledger-strategy-group.html">LSG</a>
+      <a href="/contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<div class="pub-hero">
+  <div class="pub-meta">
+    <span class="label">GroundWork</span>
+    <span class="sep">/</span>
+    <span>Tuscola County starter brief</span>
+    <span class="sep">/</span>
+    <span>Public discussion draft, May 2026</span>
+  </div>
+  <h1>Agricultural access, land-based learning, and youth readiness through <span class="accent">existing local infrastructure</span>.</h1>
+  <div class="subtitle">GroundWork is a public-facing youth agriculture and land-access initiative for Tuscola County, built to convene the actors and infrastructure already on the ground.</div>
+  <div class="pub-byline">
+    <span><strong>Prepared by</strong> Northstar Civic Institute / Community Equity Lab</span>
+    <span><strong>Series</strong> 2026 Initiative briefs</span>
+  </div>
+</div>
+
+<div class="callout">
+  <div class="callout-inner">
+    <div class="callout-label">Purpose of this brief</div>
+    <p>This brief is not a request for appropriations, endorsement, or legislation. The goal is to test whether GroundWork is feasible in Tuscola County and identify the right local starters across education, 4-H and FFA, land, conservation, and agricultural workforce partners.</p>
+  </div>
+</div>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">01<span>Executive summary</span></div>
+    <div class="section-title">
+      <h2>The opportunity is convening and validation, not new bureaucracy.</h2>
+    </div>
+  </div>
+  <div class="prose">
+    <p class="lead">GroundWork uses existing institutions, 4-H, FFA, MSU Extension, career and technical education, county GIS and land-bank tools, conservation partners, local farms, and community foundations, to create supervised land-based learning opportunities for young people.</p>
+    <p>The immediate opportunity in Tuscola County is not to create a new bureaucracy. It is to convene the right local actors, validate one or two practical sites, and test a small pilot that connects youth development, food security, agricultural workforce exposure, and productive land reuse.</p>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">02<span>Why Tuscola County</span></div>
+    <div class="section-title">
+      <h2>The infrastructure is already here. The connection is missing.</h2>
+      <p class="desc">Five reasons Tuscola County is the right place to test GroundWork before expanding the model elsewhere.</p>
+    </div>
+  </div>
+  <div class="why-list">
+    <div class="why-item">
+      <span class="why-num">i.</span>
+      <div class="why-body">District leadership in the 97th House District spans portions of Bay, Genesee, Saginaw, and Tuscola counties, and includes chairmanship of the <strong>House Oversight Subcommittee on Public Health and Food Security</strong>.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">ii.</span>
+      <div class="why-body">Tuscola County already has practical education infrastructure. <strong>Tuscola Technology Center</strong> is a Tuscola ISD career and technical education facility in Caro, offering nineteen programs to 11th and 12th grade students and adult residents.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">iii.</span>
+      <div class="why-body">Tuscola County 4-H is already active through MSU Extension, with hands-on youth development programming that includes agriculture but is <strong>not limited to farm youth</strong>.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">iv.</span>
+      <div class="why-body">The county has public GIS tools for property boundaries, school districts, flood zones, and tax and sales information, which can support a <strong>practical site-screening process</strong>.</div>
+    </div>
+    <div class="why-item">
+      <span class="why-num">v.</span>
+      <div class="why-body">A <strong>Tuscola County Land Bank Authority</strong> exists and has publicly noticed meetings concerning land-bank agreement progress, which makes land reuse a realistic validation lane rather than a theoretical concept.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">03<span>What GroundWork would do</span></div>
+    <div class="section-title">
+      <h2>Four workstreams, each with a near-term, public deliverable.</h2>
+      <p class="desc">The brief is built to test feasibility, not to launch a full program. Each workstream produces a tangible output a partner can review, adapt, or decline.</p>
+    </div>
+  </div>
+  <div class="matrix">
+    <div class="matrix-head">
+      <div class="col">Workstream</div>
+      <div class="col">Public-facing description</div>
+      <div class="col">Near-term output</div>
+    </div>
+    <div class="matrix-row">
+      <div class="label">Youth agriculture access</div>
+      <div class="desc">Use 4-H, FFA, school, and community partners to expose youth to agricultural careers, food systems, conservation, ag technology, and land entrepreneurship.</div>
+      <div class="output">Recruitment map and partner list for one starter cohort.</div>
+    </div>
+    <div class="matrix-row">
+      <div class="label">Site activation</div>
+      <div class="desc">Identify safe, accessible, publicly controlled or nonprofit-controlled land or facilities that can host supervised learning projects.</div>
+      <div class="output">Site readiness matrix with three to five candidate locations.</div>
+    </div>
+    <div class="matrix-row">
+      <div class="label">Cross-community cohort</div>
+      <div class="desc">Bring together students from rural, small-town, and adjacent urban or suburban communities around a common land-based project.</div>
+      <div class="output">One eight to twelve week pilot design with transportation and supervision plan.</div>
+    </div>
+    <div class="matrix-row">
+      <div class="label">Measurement and accountability</div>
+      <div class="desc">Track participation, attendance, skills gained, family engagement, community benefit, and youth movement into 4-H, FFA, CTE, or related pathways.</div>
+      <div class="output">Simple public reporting template.</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">04<span>Candidate sites and assets</span></div>
+    <div class="section-title">
+      <h2>Local assets worth validating, not commitments.</h2>
+      <p class="desc">The list below identifies candidate site types and local assets to assess. These are not commitments from any partner and should not be presented as approved sites.</p>
+    </div>
+  </div>
+</section>
+
+<div class="caveat">
+  <div class="caveat-inner">
+    <div class="caveat-label">Important caveat</div>
+    <p>The locations below are candidate site types and local assets to validate. They are not commitments from any partner and should not be presented as approved sites.</p>
+  </div>
+</div>
+
+<section style="padding-top:2.5rem">
+  <div class="partners">
+    <div class="partner">
+      <span class="partner-mark">i.</span>
+      <span class="partner-tag">Education hub</span>
+      <h3>Caro / Tuscola Technology Center area</h3>
+      <p>Central county education hub. Practical fit for orientation, career exposure, workshops, and school-connected recruitment.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">ii.</span>
+      <span class="partner-tag">Youth development</span>
+      <h3>MSU Extension / Tuscola 4-H network</h3>
+      <p>Existing youth development structure with volunteer, family, project, and club experience.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">iii.</span>
+      <span class="partner-tag">Public showcase</span>
+      <h3>Tuscola County Fairgrounds</h3>
+      <p>Natural venue for public demonstration, family engagement, agriculture visibility, and youth showcases through fair, 4-H, and FFA activities.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">iv.</span>
+      <span class="partner-tag">Community bridge</span>
+      <h3>Vassar / Millington connector</h3>
+      <p>Useful bridge between rural Tuscola, Saginaw-area opportunity, and small-town youth access. Strong fit for a modest community garden or conservation project.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">v.</span>
+      <span class="partner-tag">Land reuse</span>
+      <h3>County land bank or tax-reverted parcel</h3>
+      <p>Could turn an underused parcel into a supervised learning site, if safe and properly controlled.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">vi.</span>
+      <span class="partner-tag">Environmental learning</span>
+      <h3>Tuscola Conservation District site</h3>
+      <p>Adds soil health, water quality, pollinator habitat, nature journaling, and conservation education.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">vii.</span>
+      <span class="partner-tag">Career exposure</span>
+      <h3>Local farms, co-ops, agribusinesses</h3>
+      <p>Provides career exposure, mentoring, equipment literacy, and real employer context through Farm Bureau members and young farmers.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">viii.</span>
+      <span class="partner-tag">Readiness factors</span>
+      <h3>Cross-cutting screen</h3>
+      <p>Every candidate site is screened against site control, safety and access, water and soil condition, program fit, community benefit, and sustainability.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">ix.</span>
+      <span class="partner-tag">Decision authority</span>
+      <h3>Public and nonprofit validators</h3>
+      <p>School administrators, MSU Extension, the Conservation District, county GIS, EGLE if needed, and community foundation partners help validate readiness at each site.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">05<span>Pilot ladder</span></div>
+    <div class="section-title">
+      <h2>Four pilot levels, each tied to a clear use case.</h2>
+      <p class="desc">A real budget should be built after site validation, partner commitments, insurance review, and transportation planning. The figures below are planning estimates only.</p>
+    </div>
+  </div>
+  <div class="ladder">
+    <div class="rung">
+      <span class="rung-mark">i.</span>
+      <span class="rung-tag">Best first step</span>
+      <h3>Site validation sprint</h3>
+      <p>Forty-five to sixty days. Stakeholder interviews, site scan, risk screen, and draft implementation plan.</p>
+      <div class="scope">Pre-cohort feasibility</div>
+    </div>
+    <div class="rung">
+      <span class="rung-mark">ii.</span>
+      <span class="rung-tag">Tests feasibility</span>
+      <h3>Micro-pilot</h3>
+      <p>Eight weeks. Twelve to eighteen youth, one site, four to six workshops, simple project output.</p>
+      <div class="scope">Without overbuilding</div>
+    </div>
+    <div class="rung">
+      <span class="rung-mark">iii.</span>
+      <span class="rung-tag">Proof of concept</span>
+      <h3>Seasonal demonstration</h3>
+      <p>Ten to twelve weeks. Twenty to thirty youth, one or two sites, family session, youth showcase, public outcome report.</p>
+      <div class="scope">Funder-ready</div>
+    </div>
+    <div class="rung">
+      <span class="rung-mark">iv.</span>
+      <span class="rung-tag">Only after proof</span>
+      <h3>Countywide cohort</h3>
+      <p>Multi-site, school-connected cohort across several districts with transportation, partner stipends, and evaluation.</p>
+      <div class="scope">Post-pilot expansion</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="section-head">
+    <div class="section-num">06<span>The right starter introductions</span></div>
+    <div class="section-title">
+      <h2>The most useful first step is a warm introduction to local starters.</h2>
+      <p class="desc">Not an endorsement, funding request, or legislative commitment. One or two local relationships are enough to start.</p>
+    </div>
+  </div>
+  <div class="partners">
+    <div class="partner">
+      <span class="partner-mark">i.</span>
+      <span class="partner-tag">Education alignment</span>
+      <h3>Tuscola ISD / Tuscola Technology Center</h3>
+      <p>Facilities, recruitment, transportation, and CTE pathway fit.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">ii.</span>
+      <span class="partner-tag">Youth development</span>
+      <h3>MSU Extension / Tuscola County 4-H</h3>
+      <p>Youth-development structure, volunteers, curriculum experience, and family trust.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">iii.</span>
+      <span class="partner-tag">Producer credibility</span>
+      <h3>Tuscola County Farm Bureau</h3>
+      <p>Young Farmer leadership, employer visibility, mentors, site visits, and ag workforce insight.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">iv.</span>
+      <span class="partner-tag">Public-sector</span>
+      <h3>Land Bank, Treasurer, GIS, EDC, Planning</h3>
+      <p>Site identification, parcel screening, land reuse, and public-sector coordination.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">v.</span>
+      <span class="partner-tag">Environmental</span>
+      <h3>Tuscola Conservation District</h3>
+      <p>Soil, water, habitat, conservation education, and low-cost demonstration projects.</p>
+    </div>
+    <div class="partner">
+      <span class="partner-mark">vi.</span>
+      <span class="partner-tag">Community legitimacy</span>
+      <h3>Tuscola County Community Foundation</h3>
+      <p>Youth voice, small grants, and family or community legitimacy through Future Youth Involvement.</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="closing-wrap">
+  <div class="closing-inner">
+    <div>
+      <div class="closing-mark">GroundWork &middot; Next step</div>
+      <h2>Test feasibility first. Build the cohort <span class="accent">after the validation lands</span>.</h2>
+      <p>If you represent a district, an Extension office, a conservation partner, a community foundation, or a producer organization in Tuscola County, NCI is ready to convene a thirty-minute starter call and return with a one-page feasibility note.</p>
+    </div>
+    <div class="closing-cta">
+      <a class="btn btn-primary" href="/contact.html">Open a GroundWork conversation <span class="arrow">→</span></a>
+      <a class="btn btn-ghost" href="/community-equity-lab.html">See the Community Equity Lab</a>
+      <a class="btn btn-ghost" href="/initiatives.html">Back to the portfolio</a>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="foot-inner">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <svg class="mark" viewBox="0 0 120 120" role="img" aria-label="NCI mark">
+          <rect width="120" height="120" rx="26" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="38" fill="none" stroke="#C5A55A" stroke-width="1.5" opacity=".25"/>
+          <path d="M60 18 L66 50 L98 60 L66 70 L60 102 L54 70 L22 60 L54 50 Z" fill="#C5A55A"/>
+          <path d="M60 40 L65 56 L80 60 L65 64 L60 80 L55 64 L40 60 L55 56 Z" fill="#1B2A4A"/>
+          <circle cx="60" cy="60" r="4" fill="#C5A55A"/>
+        </svg>
+        <div class="foot-brand-text">
+          <h4>Northstar Civic Institute</h4>
+          <p>A nonpartisan research and policy organization building evidence-based programs, audits, and public tools for Michigan communities.</p>
+        </div>
+      </div>
+      <div class="foot-col">
+        <h5>Explore</h5>
+        <a href="/about.html">About</a>
+        <a href="/initiatives.html">Initiatives</a>
+        <a href="/mseem.html">MSEEM</a>
+        <a href="/briefs.html">Briefs</a>
+        <a href="/legislation.html">Policy</a>
+      </div>
+      <div class="foot-col">
+        <h5>Divisions</h5>
+        <a href="/community-equity-lab.html">Community Equity Lab</a>
+        <a href="/civil-governance-lab.html">Civil Governance Lab</a>
+        <a href="/ledger-strategy-group.html">Ledger Strategy Group</a>
+      </div>
+      <div class="foot-col">
+        <h5>Connect</h5>
+        <a href="/contact.html">Contact</a>
+        <a href="mailto:donavan@nciresearch.org" class="email">donavan@nciresearch.org</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>&copy; 2026 Northstar Civic Institute. All rights reserved.</div>
+      <div class="nonprofit">501(c)(3) nonprofit organization</div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
