@@ -1,0 +1,15 @@
+{
+  "name": "Northstar Civic Institute",
+  "short_name": "NCI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1B2A4A",
+  "icons": [
+    {
+      "src": "/assets/nci-mark.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
