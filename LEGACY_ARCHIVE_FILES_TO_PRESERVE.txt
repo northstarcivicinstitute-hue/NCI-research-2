@@ -12,7 +12,7 @@ Do not delete these existing PDF paths:
 /downloads/briefs/surveillance-technologies-municipal-governance-2026-04.pdf
 /downloads/briefs/sports-literacy-mental-health-survey-2026-04.pdf
 
-Preserve these previously shared legacy article URLs unless NCI makes a separate archival decision:
+Preserve these previously shared legacy article URLs unless NCI makes a separate archival decision. Their numbering is for URL continuity only and does not map to the current archive-card titles:
 
 /brief-1.html
 /brief-2.html
