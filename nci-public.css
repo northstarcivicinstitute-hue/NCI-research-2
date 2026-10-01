@@ -1935,3 +1935,10 @@ p, li, dd { text-wrap: pretty; }
 /* Step cards that use h3 + p (Community Equity Lab) keep body text regular weight */
 .decision-step h3 { margin: 0 0 8px; font-size: 1.12rem; }
 .decision-step p { margin: 0; font-weight: 400; color: var(--nci-slate); line-height: 1.55; }
+/* Publication archive: subgroup heading and archived-edition notice */
+.archive-subhead { margin: 34px 0 16px; }
+.archive-subhead h3 { margin: 0 0 6px; font-size: 1.3rem; }
+.archive-subhead p { margin: 0; max-width: 46rem; color: var(--nci-slate); }
+.archive-notice { border-left: 4px solid var(--nci-gold-500); background: var(--nci-warm); }
+.archive-steps { margin: 18px 0 8px; }
+.archive-steps > li > span { display: block; }
