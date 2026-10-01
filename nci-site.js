@@ -42,7 +42,7 @@ window.NCI_LINKS = window.NCI_LINKS || {
 /* Brief tools: reading progress, share and cite (brief pages only) */
 (function () {
   var body = document.querySelector('.brief-body');
-  if (!body) return;
+  if (!body || !document.querySelector('meta[property="og:type"][content="article"]')) return;
   var bar = document.createElement('div');
   bar.className = 'read-progress'; bar.setAttribute('aria-hidden', 'true');
   document.body.appendChild(bar);
