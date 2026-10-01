@@ -123,7 +123,15 @@ window.NCI_LINKS = window.NCI_LINKS || {
       var body = 'Please add ' + input.value.trim() + ' to the NCI Policy Watch and research updates list.';
       window.location.href = 'mailto:donavan@nciresearch.org?subject=' + encodeURIComponent('Subscribe to NCI updates') + '&body=' + encodeURIComponent(body);
       var note = form.querySelector('.subscribe-form__note');
-      if (note) { note.setAttribute('role', 'status'); note.textContent = 'Your email app should open with the request ready. Tap send to finish subscribing.'; }
+      if (note) {
+        note.setAttribute('role', 'status');
+        note.textContent = 'Your email app should open with the request ready. Tap send to finish subscribing. If nothing opened, email ';
+        var mail = document.createElement('a');
+        mail.href = 'mailto:donavan@nciresearch.org?subject=' + encodeURIComponent('Subscribe to NCI updates');
+        mail.textContent = 'donavan@nciresearch.org';
+        note.appendChild(mail);
+        note.appendChild(document.createTextNode(' with the subject \u201CSubscribe to NCI updates.\u201D'));
+      }
     });
   });
   if (L.givingUrl) {
@@ -131,4 +139,27 @@ window.NCI_LINKS = window.NCI_LINKS || {
       a.href = L.givingUrl; a.hidden = false; a.target = '_blank'; a.rel = 'noopener';
     });
   }
+})();
+
+/* Self-expiring dates. Mark a deadline with data-expires="YYYY-MM-DD"; after that day it is
+   labeled "Closed" (or data-expired-label), or its text is swapped for data-expired-text. */
+(function () {
+  var items = document.querySelectorAll('[data-expires]');
+  if (!items.length) return;
+  var now = new Date();
+  Array.prototype.forEach.call(items, function (el) {
+    var p = (el.getAttribute('data-expires') || '').split('-');
+    if (p.length !== 3) return;
+    var end = new Date(+p[0], +p[1] - 1, +p[2], 23, 59, 59);
+    if (now <= end) return;
+    var text = el.getAttribute('data-expired-text');
+    if (text) { el.textContent = text; return; }
+    el.classList.add('is-past');
+    if (!el.querySelector('.past-label')) {
+      var label = document.createElement('span');
+      label.className = 'past-label';
+      label.textContent = el.getAttribute('data-expired-label') || 'Closed';
+      el.insertBefore(label, el.firstChild);
+    }
+  });
 })();

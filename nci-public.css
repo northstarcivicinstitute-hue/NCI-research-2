@@ -1942,3 +1942,7 @@ p, li, dd { text-wrap: pretty; }
 .archive-notice { border-left: 4px solid var(--nci-gold-500); background: var(--nci-warm); }
 .archive-steps { margin: 18px 0 8px; }
 .archive-steps > li > span { display: block; }
+/* Deadlines that have passed (set by nci-site.js from data-expires) */
+.is-past { color: var(--nci-slate); }
+.is-past strong { color: var(--nci-slate); }
+.past-label { display: inline-block; margin-right: 8px; padding: 1px 8px; border: 1px solid var(--nci-line); border-radius: 999px; background: var(--nci-panel); color: var(--nci-slate); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; vertical-align: 1px; }
