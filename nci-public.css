@@ -1946,3 +1946,14 @@ p, li, dd { text-wrap: pretty; }
 .is-past { color: var(--nci-slate); }
 .is-past strong { color: var(--nci-slate); }
 .past-label { display: inline-block; margin-right: 8px; padding: 1px 8px; border: 1px solid var(--nci-line); border-radius: 999px; background: var(--nci-panel); color: var(--nci-slate); font-size: .72rem; font-weight: 800; letter-spacing: .05em; text-transform: uppercase; vertical-align: 1px; }
+/* Key takeaways box at the top of each brief */
+.key-takeaways { border-left: 4px solid var(--nci-gold-500); background: var(--nci-warm); }
+.key-takeaways ul { margin: 8px 0 0; padding-left: 1.1em; }
+.key-takeaways li { margin: 0 0 8px; }
+.key-takeaways li:last-child { margin-bottom: 0; }
+/* Three-track grids (Policy Watch and Atlas research tracks) */
+@media (min-width: 1041px) {
+  .briefs-grid--three, .atlas-public-grid--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.atlas-public-grid + .verification-note { margin-top: 18px; }
+.verification-note + .verification-note { margin-top: 12px; }
