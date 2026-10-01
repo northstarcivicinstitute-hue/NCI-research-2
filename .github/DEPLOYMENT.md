@@ -38,6 +38,25 @@ To run the same check on your own computer, from the repository folder:
 python3 .github/scripts/check_site.py
 ```
 
+## Source standard
+
+Every factual item links the record it comes from.
+
+1. **Official primary records first:** legislative text and votes (congress.gov,
+   govinfo.gov, senate.gov, clerk.house.gov, legislature.mi.gov), agency releases
+   (michigan.gov, federal agencies), court records, public datasets and
+   peer-reviewed research (DOI, PubMed).
+2. **Established news organizations** only when they add detail no primary
+   record has, and labeled as reporting (for example "Local 4 reporting").
+3. **Advocacy or company statements** only to show that organization's own
+   position or practice, and labeled as such ("AFL-CIO opposition statement").
+4. **Never** party caucus or campaign sites. The site check rejects them.
+
+Keep **Fact** and **NCI analysis** separate, and never endorse or oppose a
+candidate, party, bill or ballot measure. Every brief footer carries the line
+"NCI does not endorse or oppose legislation, ballot measures or candidates";
+the site check enforces it.
+
 ## Common edits
 
 **Policy Watch item.** In `policy-watch.html`, copy an existing

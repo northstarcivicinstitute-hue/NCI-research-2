@@ -81,6 +81,12 @@ def resolve(source, url):
     return target, u.fragment
 
 
+# Party caucus and campaign sites are not neutral sources for a nonpartisan publisher.
+PARTISAN_HOSTS = ('democrats.senate.gov', 'republicans.senate.gov', 'democrats.house.gov', 'republicans.house.gov',
+                  'gop.gov', 'dems.gov', 'democrats.org', 'gop.com', 'housedems', 'senatedems', 'housegop', 'senategop',
+                  'actblue.com', 'winred.com')
+
+
 def luminance(hex_color):
     rgb = [int(hex_color[i:i + 2], 16) / 255 for i in (1, 3, 5)]
     rgb = [c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in rgb]
@@ -149,8 +155,14 @@ for f in pages:
         fail(f, 'does not load /nci-site.js')
     if 'nci-public.css' not in [u.lstrip('/') for u in p.links.get('stylesheet', [])]:
         fail(f, 'does not load /nci-public.css')
+    note = re.search(r'<div class="brief-footer-note">(.*?)</div>', open(os.path.join(ROOT, f), encoding='utf-8').read(), re.S)
+    if note and 'endorse or oppose' not in note.group(1):
+        fail(f, 'brief footer is missing the nonpartisan statement ("does not endorse or oppose ...")')
     for tag, url in p.refs:
         hit = resolve(f, url)
+        host = urlparse(url).netloc.lower()
+        if any(p in host for p in PARTISAN_HOSTS):
+            fail(f, f'links a party or campaign site; cite the official record instead: {url}')
         if not hit:
             if url.startswith('http://'):
                 fail(f, f'insecure http:// link: {url}')
