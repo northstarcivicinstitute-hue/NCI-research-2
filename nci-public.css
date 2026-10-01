@@ -1957,3 +1957,12 @@ p, li, dd { text-wrap: pretty; }
 }
 .atlas-public-grid + .verification-note { margin-top: 18px; }
 .verification-note + .verification-note { margin-top: 12px; }
+/* Logos: full NCI logo in the home hero, family marks on cards and program heroes */
+.hero__method-card .hero__logo-full { width: min(100%, 230px); height: auto; margin: 0 auto 18px; border-radius: 16px; box-shadow: 0 10px 28px rgba(0,0,0,.28); }
+.brand-board__card .org-mark { width: 48px; height: 48px; margin: 18px 0 0; border-radius: 10px; }
+.brand-board__card--cel .org-mark { background: #101b30; padding: 4px; }
+.entity-card .entity-logo { height: 72px; width: auto; border-radius: 10px; }
+.entity-logo--hero { height: auto !important; width: min(220px, 60vw) !important; margin-bottom: 22px; }
+.brand-hero__mark { display: block; width: 88px; height: 88px; margin: 0 0 12px; }
+@media (max-width: 680px) { .brand-hero__mark { width: 56px; height: 56px; } }
+.entity-card .entity-logo { height: 96px !important; width: auto !important; max-width: 100%; object-fit: contain; object-position: left center; align-self: flex-start; border-radius: 10px; }

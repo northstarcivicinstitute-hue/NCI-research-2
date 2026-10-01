@@ -83,6 +83,27 @@ section of `index.html`.
 `weekly-news.html` and change the three addresses in it. Remove the page from
 `sitemap.xml`.
 
+## Daily updates
+
+A scheduled research routine runs every morning at 6:47 a.m. Michigan time. It
+looks for new Michigan, federal and (where relevant) international developments
+in NCI's three research lanes. Each fact goes through three checks:
+
+1. verified against an official or authoritative source,
+2. re-verified independently in a second pass, and
+3. the site check plus a line-by-line review of the changes.
+
+The routine then pushes a branch named `daily-update-YYYY-MM-DD`. The
+**Daily update** workflow opens a pull request for it and you get a notification.
+
+- **To publish:** review the pull request and comment `/publish` (or approve it).
+  The site check runs once more, the update merges into `main`, and the site
+  refreshes within minutes. Only the repository owner's comment or approval counts.
+- **To reject:** close the pull request.
+- If the pull request does not open automatically, turn on **Settings → Actions →
+  General → Allow GitHub Actions to create and approve pull requests**, or open it
+  from the branch yourself.
+
 ## Turning on the newsletter and online giving
 
 Both are switched off until the accounts exist. At the top of `nci-site.js`:
