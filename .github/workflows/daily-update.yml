@@ -1,0 +1,73 @@
+name: Daily update
+
+# The daily research routine pushes a branch named daily-update-YYYY-MM-DD.
+# 1. This workflow opens a pull request for it.
+# 2. The repository owner reviews it and comments  /publish  (or approves the PR).
+# 3. The site check runs once more and the update is merged, which publishes it.
+on:
+  push:
+    branches: ['daily-update-**']
+  issue_comment:
+    types: [created]
+  pull_request_review:
+    types: [submitted]
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  open-pr:
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Open a pull request for review
+        env:
+          GH_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          if [ -n "$(gh pr list --head "$BRANCH" --state open --json number --jq '.[].number')" ]; then
+            echo "Pull request already open."; exit 0
+          fi
+          gh pr create --base main --head "$BRANCH" \
+            --title "Daily update: ${BRANCH#daily-update-}" \
+            --body "Daily Policy Watch and brief update prepared by the research routine. See the commit message for each item, its source and its verification notes.
+
+          **To publish:** review the changes, then comment \`/publish\` on this pull request (or approve it). The site check runs again and the update merges and goes live. To reject, close the pull request." \
+            || echo "::warning::Could not open a pull request automatically. Allow GitHub Actions to create pull requests (Settings > Actions > General) or open one from the branch."
+
+  publish:
+    if: >-
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+       github.event.comment.user.login == github.repository_owner &&
+       (startsWith(github.event.comment.body, '/publish') || startsWith(github.event.comment.body, '/approve'))) ||
+      (github.event_name == 'pull_request_review' && github.event.review.state == 'approved' &&
+       github.event.review.user.login == github.repository_owner &&
+       startsWith(github.event.pull_request.head.ref, 'daily-update-'))
+    runs-on: ubuntu-latest
+    steps:
+      - name: Identify the pull request
+        id: pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number || github.event.pull_request.number }}
+        run: |
+          head=$(gh pr view "$NUMBER" --repo "$GITHUB_REPOSITORY" --json headRefName --jq .headRefName)
+          case "$head" in daily-update-*) ;; *) echo "Not a daily-update pull request ($head); nothing to do."; exit 1;; esac
+          echo "number=$NUMBER" >> "$GITHUB_OUTPUT"
+          echo "head=$head" >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.pr.outputs.head }}
+      - name: Final site check (using the check from main)
+        run: |
+          git fetch --depth=1 origin main
+          git show origin/main:.github/scripts/check_site.py > /tmp/check_site.py
+          python3 /tmp/check_site.py
+      - name: Merge and publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr merge "${{ steps.pr.outputs.number }}" --repo "$GITHUB_REPOSITORY" --merge --delete-branch
+          gh pr comment "${{ steps.pr.outputs.number }}" --repo "$GITHUB_REPOSITORY" --body "Published: the site check passed and this update is merged into main. GitHub Pages will refresh nciresearch.org within a few minutes."
