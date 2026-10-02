@@ -1966,6 +1966,11 @@ p, li, dd { text-wrap: pretty; }
 .brand-hero__mark { display: block; width: 88px; height: 88px; margin: 0 0 12px; }
 @media (max-width: 680px) { .brand-hero__mark { width: 56px; height: 56px; } }
 .entity-card .entity-logo { height: 96px !important; width: auto !important; max-width: 100%; object-fit: contain; object-position: left center; align-self: flex-start; border-radius: 10px; }
+/* Policy Watch: jump menu and topic sections */
+.watch-intro a { color: #fff; }
+@media (max-width: 899px) { .watch-jump { position: sticky; top: 64px; z-index: 15; } .watch-section { scroll-margin-top: 150px; } }
+@media (min-width: 900px) { .watch-section { scroll-margin-top: 96px; } }
+.watch-section .section__head h2 { margin-top: 0; }
 /* Atlas framework: keep card text top-aligned; sub-fields read as part of their parent question */
 .framework-item { align-content: start; }
 .framework-item strong.framework-item__field { margin-top: 6px; color: var(--nci-gold-text); font-size: .9rem; }
