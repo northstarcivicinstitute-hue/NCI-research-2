@@ -81,9 +81,10 @@ section of `index.html`.
 
 **Social links.** NCI's X account (`https://x.com/CivicNorthstar`) and Donavan
 Norman's LinkedIn (`https://www.linkedin.com/in/donavannorman`) appear in the footer of
-every page (`.footer-bottom`: "Founder on LinkedIn" and "NCI on X") and as buttons at
-the top of `contact.html`. The LinkedIn link is also in the Leadership panel on
-`about.html`. In the JSON-LD of `index.html`, `about.html` and the current briefs, the
+every page (`.footer-bottom`: "Founder on LinkedIn" and "NCI on X") and in the
+"Direct email" panel of `contact.html`. The LinkedIn link is also in the Leadership
+panel on `about.html`, and the X link is in the note under the email sign-up forms on
+`index.html` and `policy-watch.html`. In the JSON-LD of `index.html`, `about.html` and the current briefs, the
 NCI `Organization` lists the X account under `sameAs` and the founder/author `Person`
 lists LinkedIn. Every page's `<head>` also carries
 `<meta content="@CivicNorthstar" name="twitter:site"/>` so links shared on X credit the
