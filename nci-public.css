@@ -1813,7 +1813,17 @@ p, li, dd { text-wrap: pretty; }
   .nav { gap: 4px 12px; }
   .nav a { font-size: .9rem; }
   .nav a.nav-cta { padding-inline: 12px; }
-  .brand__name { font-size: .95rem; white-space: nowrap; }
+  /* The menu keeps its size (incl. "Civic Governance Atlas"); the brand name wraps instead */
+  .site-header__inner { gap: 16px; }
+  .brand { flex: 0 1 auto; min-width: 0; }
+  .nav { flex: none; }
+  .brand__name { font-size: .95rem; }
+}
+@media (min-width: 761px) and (max-width: 860px) {
+  .nav { gap: 4px 9px; }
+  .nav a { font-size: .86rem; }
+  .brand { gap: 10px; }
+  .brand__mark { width: 40px; height: 40px; }
 }
 
 /* ---------- Nonpartisan standard, disclosure, subscribe, giving ---------- */
@@ -1974,3 +1984,9 @@ p, li, dd { text-wrap: pretty; }
 /* Atlas framework: keep card text top-aligned; sub-fields read as part of their parent question */
 .framework-item { align-content: start; }
 .framework-item strong.framework-item__field { margin-top: 6px; color: var(--nci-gold-text); font-size: .9rem; }
+/* Footer: larger tap targets for the email and social links on phones */
+@media (max-width: 760px) {
+  .footer-bottom a { display: inline-block; padding-block: 6px; }
+}
+/* Brief tools: link buttons (Share on X / LinkedIn) match the real buttons' text alignment */
+.brief-tools .button { line-height: 1.2; }
