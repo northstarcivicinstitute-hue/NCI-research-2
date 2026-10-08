@@ -92,8 +92,20 @@ window.NCI_LINKS = window.NCI_LINKS || {
   }
   var tools = document.createElement('div');
   tools.className = 'brief-tools';
-  tools.innerHTML = '<button class="button button--secondary button--small" type="button" data-tool="share">Share</button>' +
-                    '<button class="button button--secondary button--small" type="button" data-tool="cite">Cite this brief</button>';
+  function tool(tag, label, attrs) {
+    var el = document.createElement(tag);
+    el.className = 'button button--secondary button--small';
+    el.textContent = label;
+    Object.keys(attrs).forEach(function (k) { el.setAttribute(k, attrs[k]); });
+    tools.appendChild(el);
+  }
+  // Without a share sheet (most desktops) the Share button only copies the link, so say so.
+  tool('button', navigator.share ? 'Share' : 'Copy link', { type: 'button', 'data-tool': 'share' });
+  tool('a', 'Share on X', { target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'Share on X (opens in a new tab)',
+    href: 'https://x.com/intent/post?text=' + encodeURIComponent(title) + '&url=' + encodeURIComponent(url) + '&via=CivicNorthstar' });
+  tool('a', 'Share on LinkedIn', { target: '_blank', rel: 'noopener noreferrer', 'aria-label': 'Share on LinkedIn (opens in a new tab)',
+    href: 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url) });
+  tool('button', 'Cite this brief', { type: 'button', 'data-tool': 'cite' });
   var actions = hero.querySelector('.brief-actions');
   if (actions) actions.insertAdjacentElement('afterend', tools); else hero.appendChild(tools);
   tools.addEventListener('click', function (e) {

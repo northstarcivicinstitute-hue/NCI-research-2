@@ -88,8 +88,13 @@ panel on `about.html`, and the X link is in the note under the email sign-up for
 NCI `Organization` lists the X account under `sameAs` and the founder/author `Person`
 lists LinkedIn. Every page's `<head>` also carries
 `<meta content="@CivicNorthstar" name="twitter:site"/>` so links shared on X credit the
-account; copy it when you make a new page. To change an address, update all of these
-places.
+account; copy it when you make a new page. Brief pages also get **Share on X** (credits
+@CivicNorthstar) and **Share on LinkedIn** buttons from the brief tools in `nci-site.js`.
+To change an address, update all of these places.
+
+**Menu.** The Atlas appears in the menu by its full name, "Civic Governance Atlas". On
+narrow desktops and tablets (761-940px) the brand name wraps to make room; check the
+header at about 768px after changing menu items.
 
 **Retire a page.** Replace its contents with a redirect page; copy
 `weekly-news.html` and change the three addresses in it. Remove the page from
