@@ -79,6 +79,15 @@ sentence after a date instead, add `data-expired-text="Text to show afterwards."
 a line to `sitemap.xml`, and (if it is current) a card to the "Latest research"
 section of `index.html`.
 
+**Social links.** Donavan Norman's LinkedIn
+(`https://www.linkedin.com/in/donavannorman`) appears in four places: the footer of
+every page ("Founder on LinkedIn" in `.footer-bottom`), the Leadership panel on
+`about.html`, the buttons at the top of `contact.html`, and as `sameAs` on the
+founder/author `Person` in the JSON-LD of `index.html`, `about.html` and the current
+briefs. To add another account (for example NCI on X), add it in the same places; for
+X, also add `<meta name="twitter:site" content="@handle">` to each page's `<head>` so
+shared links credit the account.
+
 **Retire a page.** Replace its contents with a redirect page; copy
 `weekly-news.html` and change the three addresses in it. Remove the page from
 `sitemap.xml`.
