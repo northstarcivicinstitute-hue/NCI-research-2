@@ -79,14 +79,16 @@ sentence after a date instead, add `data-expired-text="Text to show afterwards."
 a line to `sitemap.xml`, and (if it is current) a card to the "Latest research"
 section of `index.html`.
 
-**Social links.** Donavan Norman's LinkedIn
-(`https://www.linkedin.com/in/donavannorman`) appears in four places: the footer of
-every page ("Founder on LinkedIn" in `.footer-bottom`), the Leadership panel on
-`about.html`, the buttons at the top of `contact.html`, and as `sameAs` on the
-founder/author `Person` in the JSON-LD of `index.html`, `about.html` and the current
-briefs. To add another account (for example NCI on X), add it in the same places; for
-X, also add `<meta name="twitter:site" content="@handle">` to each page's `<head>` so
-shared links credit the account.
+**Social links.** NCI's X account (`https://x.com/civicnorthstar`) and Donavan
+Norman's LinkedIn (`https://www.linkedin.com/in/donavannorman`) appear in the footer of
+every page (`.footer-bottom`: "Founder on LinkedIn" and "NCI on X") and as buttons at
+the top of `contact.html`. The LinkedIn link is also in the Leadership panel on
+`about.html`. In the JSON-LD of `index.html`, `about.html` and the current briefs, the
+NCI `Organization` lists the X account under `sameAs` and the founder/author `Person`
+lists LinkedIn. Every page's `<head>` also carries
+`<meta content="@civicnorthstar" name="twitter:site"/>` so links shared on X credit the
+account; copy it when you make a new page. To change an address, update all of these
+places.
 
 **Retire a page.** Replace its contents with a redirect page; copy
 `weekly-news.html` and change the three addresses in it. Remove the page from
