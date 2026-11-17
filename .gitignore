@@ -1,0 +1,4 @@
+# Ad Grants working files: build script, raw CSV export, template snippet.
+# Not part of the published site. nci-tracking.js (once added) is published
+# and is intentionally NOT excluded here.
+/ad-grants/
